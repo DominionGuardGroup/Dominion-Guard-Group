@@ -10,43 +10,80 @@
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#f4f4f4;
+font-family:Arial;
+background:#0a0a0a;
+color:white;
 }
+
+/* HEADER */
 
 header{
-background:#000;
-color:white;
+background:black;
 padding:20px;
 text-align:center;
-font-size:30px;
-font-weight:bold;
+border-bottom:4px solid gold;
 }
 
+.logo{
+font-size:34px;
+font-weight:bold;
+color:gold;
+}
+
+.slogan{
+color:#00a86b;
+font-size:18px;
+margin-top:5px;
+}
+
+
+/* NAV */
+
 nav{
-background:#222;
+background:#111;
 padding:15px;
 text-align:center;
+border-bottom:3px solid #00a86b;
 }
 
 nav a{
-color:white;
-margin:15px;
+color:gold;
+margin:20px;
 text-decoration:none;
 font-size:18px;
 }
 
+
+
+/* HERO */
+
 .hero{
-background:white;
+
 text-align:center;
 padding:60px 20px;
+background:black;
+
+}
+
+.hero h1{
+
+color:gold;
+font-size:40px;
+
+}
+
+.hero p{
+
+color:#00a86b;
+font-size:20px;
+
 }
 
 .button{
 
-background:#000;
-color:white;
+background:gold;
+color:black;
 padding:15px 30px;
 margin:10px;
 display:inline-block;
@@ -56,12 +93,25 @@ border-radius:5px;
 
 }
 
+
+
+/* SECTIONS */
+
 .section{
 
-padding:50px 20px;
+padding:60px 20px;
 text-align:center;
 
 }
+
+.section h2{
+
+color:gold;
+}
+
+
+
+/* SERVICES */
 
 .services{
 
@@ -73,15 +123,19 @@ justify-content:center;
 
 .card{
 
-background:white;
-width:260px;
+background:#111;
+width:280px;
 margin:15px;
-padding:20px;
-box-shadow:0px 0px 10px gray;
+padding:25px;
+border:2px solid gold;
 
 }
 
-.shop{
+
+
+/* PRICING */
+
+.pricing{
 
 display:flex;
 flex-wrap:wrap;
@@ -89,22 +143,45 @@ justify-content:center;
 
 }
 
-.product{
+.pricebox{
 
-background:white;
-width:260px;
+background:black;
+border:2px solid #00a86b;
+width:300px;
 margin:15px;
-padding:20px;
-box-shadow:0px 0px 10px gray;
+padding:25px;
 
 }
+
+.price{
+
+color:gold;
+font-size:26px;
+margin:10px;
+
+}
+
+
+
+/* BOOKING */
+
+.booking{
+
+background:#111;
+padding:40px;
+
+}
+
+
+
+/* FOOTER */
 
 footer{
 
 background:black;
-color:white;
-text-align:center;
+border-top:4px solid gold;
 padding:30px;
+text-align:center;
 
 }
 
@@ -114,19 +191,33 @@ padding:30px;
 
 <body>
 
+
+
 <header>
+
+<div class="logo">
 
 Dominion Guard Group
 
+</div>
+
+<div class="slogan">
+
+Eco Driven Property Protection & Restoration
+
+</div>
+
 </header>
+
+
 
 <nav>
 
 <a href="#services">Services</a>
 
-<a href="#shop">Shop</a>
+<a href="#pricing">Pricing</a>
 
-<a href="#booking">Book</a>
+<a href="#booking">Booking</a>
 
 <a href="#contact">Contact</a>
 
@@ -134,133 +225,245 @@ Dominion Guard Group
 
 
 
+
 <div class="hero">
 
-<h1>Professional Carpet & Tile Cleaning</h1>
+<h1>
 
-<p>Austin Texas Residential & Commercial Cleaning</p>
+Property • Facility • Infrastructure Services
 
-<a class="button" href="tel:7373045053">Call Now</a>
+</h1>
 
-<a class="button" href="#booking">Book Appointment</a>
+<p>
+
+Professional Cleaning & Restoration
+
+</p>
+
+<a class="button" href="tel:7373045053">
+
+Call Now
+
+</a>
 
 </div>
+
 
 
 
 <div class="section" id="services">
 
-<h2>Our Services</h2>
+<h2>
+
+Property Facility Infrastructure Services
+
+</h2>
 
 <div class="services">
-
 
 <div class="card">
 
 <h3>Carpet Cleaning</h3>
 
-<p>Deep cleaning and fast dry technology.</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Tile & Grout Cleaning</h3>
-
-<p>Professional tile restoration cleaning.</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Pet Odor Treatment</h3>
-
-<p>Pet stain and odor removal service.</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Eco Friendly Cleaning</h3>
-
-<p>Safe cleaning for homes and children.</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-<div class="section" id="shop">
-
-<h2>Buy Services</h2>
-
-
-<div class="shop">
-
-
-<div class="product">
-
-<h3>$99 Carpet Cleaning Special</h3>
-
-<p>Discount Service Coupon</p>
-
-<a class="button" href="#">Buy Now</a>
-
-</div>
-
-
-
-<div class="product">
-
-<h3>$150 Deep Cleaning</h3>
-
-<p>Full Service Cleaning</p>
-
-<a class="button" href="#">Buy Now</a>
-
-</div>
-
-
-
-<div class="product">
-
-<h3>$199 Premium Cleaning</h3>
-
-<p>Large Area Cleaning</p>
-
-<a class="button" href="#">Buy Now</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-
-<div class="section" id="booking">
-
-<h2>Book Appointment</h2>
-
-<p>Choose a time to schedule your service.</p>
-
-
 <p>
 
-Booking Calendar Coming Soon
+Deep cleaning eco-safe restoration.
 
 </p>
 
+</div>
+
+
+<div class="card">
+
+<h3>Tile & Grout</h3>
+
+<p>
+
+Professional restoration cleaning.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Property Turnover</h3>
+
+<p>
+
+Fast 48-hour turnaround for landlords and property managers.
+
+Pricing by square footage.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Eco Cleaning</h3>
+
+<p>
+
+Safe eco driven cleaning technology.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="section" id="pricing">
+
+<h2>
+
+Pricing + Tax
+
+</h2>
+
+
+
+<div class="pricing">
+
+
+
+<div class="pricebox">
+
+<h3>Carpet Cleaning Gold Level 2</h3>
+
+<div class="price">
+
+$85.00
+
+</div>
+
+<p>
+
+General Services
+
+</p>
+
+<a class="button" href="#">
+
+Pay Now
+
+</a>
+
+</div>
+
+
+
+<div class="pricebox">
+
+<h3>Carpet Cleaning Gold Level 3</h3>
+
+<div class="price">
+
+$100.00
+
+</div>
+
+<p>
+
+General Services
+
+</p>
+
+<a class="button" href="#">
+
+Pay Now
+
+</a>
+
+</div>
+
+
+
+<div class="pricebox">
+
+<h3>Carpet Cleaning Gold Level 5</h3>
+
+<div class="price">
+
+$150.00
+
+</div>
+
+<p>
+
+General Services
+
+</p>
+
+<a class="button" href="#">
+
+Pay Now
+
+</a>
+
+</div>
+
+
+
+<div class="pricebox">
+
+<h3>Carpet Cleaning 7 Room Areas</h3>
+
+<div class="price">
+
+$175.00
+
+</div>
+
+<p>
+
+General Services
+
+</p>
+
+<a class="button" href="#">
+
+Pay Now
+
+</a>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="section booking" id="booking">
+
+<h2>
+
+Booking
+
+</h2>
+
+<p>
+
+Call to schedule or online booking coming soon.
+
+</p>
 
 <a class="button" href="tel:7373045053">
 
@@ -268,15 +471,19 @@ Call To Book
 
 </a>
 
-
 </div>
+
 
 
 
 
 <div class="section" id="contact">
 
-<h2>Contact Us</h2>
+<h2>
+
+Contact
+
+</h2>
 
 <p>
 
@@ -294,8 +501,6 @@ Dominionguardgroup.com@outlook.com
 
 <p>
 
-Location:
-
 Austin Texas
 
 </p>
@@ -304,15 +509,21 @@ Austin Texas
 
 
 
+
 <footer>
 
-Dominion Guard Group<br>
+Dominion Guard Group
 
-Austin Texas<br>
+<br>
 
-(737) 304-5053
+Eco Driven Property Protection & Restoration
+
+<br>
+
+Austin Texas
 
 </footer>
+
 
 
 </body>
