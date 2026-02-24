@@ -1,0 +1,30 @@
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #FFD700; /* Gold for headings */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    background-color: #008000; /* Emerald green buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005700; /* Darker green on hover */
+}
