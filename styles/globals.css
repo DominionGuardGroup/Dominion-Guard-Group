@@ -1,0 +1,22 @@
+.body {
+  background-color: black;
+  color: gold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: emerald;
+}
+
+.button {
+  background-color: gold;
+  border: 1px solid emerald;
+}
+
+a {
+  color: emerald;
+}
+
+.footer {
+  background-color: black;
+  color: gold;
+}
