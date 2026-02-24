@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,43 +8,58 @@
 
 <title>Dominion Guard Group</title>
 
+
 <style>
 
-/* BRAND COLORS */
+/* ===== BRAND COLORS ===== */
 
 :root{
 
---black:#000000;
---gold:#D4AF37;
---emerald:#009B77;
+--black:#050505;
+--gold:#C9A227;
+--goldLight:#E6C65C;
+--emerald:#007A5E;
+--emeraldLight:#00A67E;
 
 }
+
+
+/* ===== BODY ===== */
 
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 background:var(--black);
 color:white;
+line-height:1.6;
 }
 
 
 
-/* HEADER */
+/* ===== HEADER ===== */
 
 header{
 
-background:var(--black);
+background:#000;
 text-align:center;
-padding:30px;
+padding:40px 20px;
 border-bottom:6px solid var(--gold);
+
+}
+
+.logo{
+
+width:200px;
+margin-bottom:10px;
 
 }
 
 .company{
 
-font-size:44px;
+font-size:48px;
 font-weight:bold;
 color:var(--gold);
+letter-spacing:2px;
 
 }
 
@@ -57,11 +73,11 @@ margin-top:10px;
 
 
 
-/* NAV */
+/* ===== NAVIGATION ===== */
 
 nav{
 
-background:#0a0a0a;
+background:#0b0b0b;
 border-bottom:3px solid var(--emerald);
 padding:18px;
 text-align:center;
@@ -71,26 +87,33 @@ text-align:center;
 nav a{
 
 color:var(--gold);
-margin:25px;
+margin:20px;
 font-size:20px;
 text-decoration:none;
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+color:var(--emerald);
 
 }
 
 
 
-/* HERO */
+/* ===== HERO ===== */
 
 .hero{
 
 text-align:center;
-padding:80px 20px;
+padding:90px 20px;
 
 }
 
 .heroTitle{
 
-font-size:36px;
+font-size:38px;
 color:var(--gold);
 
 }
@@ -105,30 +128,50 @@ margin:20px;
 
 
 
-/* BUTTONS */
+/* ===== BUTTONS ===== */
 
 .button{
 
-background:var(--gold);
+background:linear-gradient(
+to bottom,
+var(--goldLight),
+var(--gold)
+);
+
 color:black;
-padding:16px 30px;
+
+padding:18px 36px;
+
 text-decoration:none;
+
 margin:10px;
+
 display:inline-block;
+
 font-size:18px;
-border-radius:5px;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.button:hover{
+
+background:var(--emeraldLight);
+color:white;
 
 }
 
 
 
-/* STRIPES */
+/* ===== STRIPES ===== */
 
 .goldStripe{
 
 height:8px;
 background:var(--gold);
-margin:50px 0;
+margin:60px 0;
 
 }
 
@@ -136,31 +179,32 @@ margin:50px 0;
 
 height:6px;
 background:var(--emerald);
-margin:40px 0;
+margin:50px 0;
 
 }
 
 
 
-/* SECTIONS */
+/* ===== SECTIONS ===== */
 
 .section{
 
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 
 }
 
 .sectionTitle{
 
-font-size:34px;
+font-size:36px;
 color:var(--gold);
+margin-bottom:30px;
 
 }
 
 
 
-/* SERVICES */
+/* ===== SERVICES ===== */
 
 .services{
 
@@ -172,17 +216,26 @@ justify-content:center;
 
 .serviceBox{
 
-background:#050505;
+background:#0b0b0b;
 border:2px solid var(--gold);
-width:300px;
+width:320px;
 margin:15px;
 padding:25px;
+border-radius:8px;
+
+}
+
+.serviceBox img{
+
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
 
 }
 
 
 
-/* PRICING */
+/* ===== PRICING ===== */
 
 .pricing{
 
@@ -194,11 +247,12 @@ justify-content:center;
 
 .priceBox{
 
-background:#020202;
+background:#0a0a0a;
 border:3px solid var(--emerald);
-width:320px;
+width:340px;
 margin:15px;
 padding:25px;
+border-radius:8px;
 
 }
 
@@ -211,7 +265,7 @@ font-size:22px;
 
 .priceAmount{
 
-font-size:32px;
+font-size:34px;
 color:var(--gold);
 margin:10px;
 
@@ -219,13 +273,14 @@ margin:10px;
 
 
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 
 footer{
 
 text-align:center;
 padding:40px;
 border-top:6px solid var(--gold);
+background:#000;
 
 }
 
@@ -233,22 +288,24 @@ border-top:6px solid var(--gold);
 
 </head>
 
+
+
 <body>
 
 
 
 <header>
 
+<!-- PUT YOUR LOGO IN /images/logo.png -->
+
+<img src="images/logo.png" class="logo">
+
 <div class="company">
-
 Dominion Guard Group
-
 </div>
 
 <div class="slogan">
-
 Eco Driven Property Protection & Restoration
-
 </div>
 
 </header>
@@ -272,21 +329,15 @@ Eco Driven Property Protection & Restoration
 <div class="hero">
 
 <div class="heroTitle">
-
 Property • Facility • Infrastructure Services
-
 </div>
 
 <div class="heroSub">
-
 Professional Property Protection & Restoration
-
 </div>
 
 <a class="button" href="tel:7373045053">
-
 Call Now
-
 </a>
 
 </div>
@@ -300,10 +351,9 @@ Call Now
 <div class="section" id="services">
 
 <div class="sectionTitle">
-
 Property Facility Infrastructure Services
-
 </div>
+
 
 
 <div class="services">
@@ -311,53 +361,55 @@ Property Facility Infrastructure Services
 
 <div class="serviceBox">
 
+<img src="images/carpet.jpg">
+
 <h3>Carpet Cleaning</h3>
 
 <p>
-
 Eco Driven Deep Cleaning Restoration
-
 </p>
 
 </div>
 
 
+
 <div class="serviceBox">
+
+<img src="images/property.jpg">
 
 <h3>Property Turnover</h3>
 
 <p>
-
 Fast 48-hour turnaround for landlords and property managers.
-
 Pricing by square footage.
-
 </p>
 
 </div>
 
 
+
 <div class="serviceBox">
+
+<img src="images/tile.jpg">
 
 <h3>Tile & Surface Cleaning</h3>
 
 <p>
-
 Professional restoration cleaning.
-
 </p>
 
 </div>
 
 
+
 <div class="serviceBox">
+
+<img src="images/eco.jpg">
 
 <h3>Eco Cleaning</h3>
 
 <p>
-
 Safe eco driven cleaning technology.
-
 </p>
 
 </div>
@@ -376,9 +428,7 @@ Safe eco driven cleaning technology.
 <div class="section" id="pricing">
 
 <div class="sectionTitle">
-
 Pricing + Tax
-
 </div>
 
 
@@ -389,15 +439,11 @@ Pricing + Tax
 <div class="priceBox">
 
 <div class="priceTitle">
-
 Carpet Cleaning Gold Level 2
-
 </div>
 
 <div class="priceAmount">
-
-$85.00 USD
-
+$85.00
 </div>
 
 <p>General Services</p>
@@ -409,15 +455,11 @@ $85.00 USD
 <div class="priceBox">
 
 <div class="priceTitle">
-
 Carpet Cleaning Gold Level 3
-
 </div>
 
 <div class="priceAmount">
-
-$100.00 USD
-
+$100.00
 </div>
 
 <p>General Services</p>
@@ -429,15 +471,11 @@ $100.00 USD
 <div class="priceBox">
 
 <div class="priceTitle">
-
 Carpet Cleaning Gold Level 5
-
 </div>
 
 <div class="priceAmount">
-
-$150.00 USD
-
+$150.00
 </div>
 
 <p>General Services</p>
@@ -449,15 +487,11 @@ $150.00 USD
 <div class="priceBox">
 
 <div class="priceTitle">
-
 Carpet Cleaning 7 Room Areas
-
 </div>
 
 <div class="priceAmount">
-
-$175.00 USD
-
+$175.00
 </div>
 
 <p>General Services</p>
@@ -469,15 +503,11 @@ $175.00 USD
 <div class="priceBox">
 
 <div class="priceTitle">
-
 Property Turnover Service
-
 </div>
 
 <div class="priceAmount">
-
 Pricing by Square Footage
-
 </div>
 
 <p>48 Hour Turnaround</p>
@@ -498,21 +528,15 @@ Pricing by Square Footage
 <div class="section" id="booking">
 
 <div class="sectionTitle">
-
 Booking
-
 </div>
 
 <p>
-
 Call to schedule service
-
 </p>
 
 <a class="button" href="tel:7373045053">
-
 Call (737) 304-5053
-
 </a>
 
 </div>
@@ -526,27 +550,19 @@ Call (737) 304-5053
 <div class="section" id="contact">
 
 <div class="sectionTitle">
-
 Contact
-
 </div>
 
 <p>
-
 Phone: (737) 304-5053
-
 </p>
 
 <p>
-
 Dominionguardgroup.com@outlook.com
-
 </p>
 
 <p>
-
 Austin Texas
-
 </p>
 
 </div>
@@ -557,11 +573,11 @@ Austin Texas
 
 Dominion Guard Group
 
-<br>
+<br><br>
 
 Eco Driven Property Protection & Restoration
 
-<br>
+<br><br>
 
 Property • Facility • Infrastructure Services
 
