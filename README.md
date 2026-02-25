@@ -1,1 +1,225 @@
 Eco Driven Property Protection & Restoration Property Facility Infrastructure
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dominion Guard Group</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<h1>Dominion Guard Group</h1>
+
+<h2>Eco Driven Property Protection & Restoration</h2>
+
+<p>Property - Facility - Infrastructure</p>
+
+<p>Product Sales</p>
+
+<p>Austin Texas + Metro Areas</p>
+
+<p>Payment Zelle *Stripe *Bluevine *Cash</p>
+
+<p>Flat Rate Discount*</p>
+
+<hr>
+
+
+<h2>PRICING</h2>
+
+
+<h3>Carpet Cleaning Gold Level 2</h3>
+
+<p>$85.00 USD</p>
+
+<p>General - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Gold Level 2',85)">Add To Cart</button>
+
+<hr>
+
+
+<h3>Carpet Cleaning Gold Level 3</h3>
+
+<p>$100.00 USD</p>
+
+<p>General - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Gold Level 3',100)">Add To Cart</button>
+
+<hr>
+
+
+<h3>Carpet Cleaning Gold Level 5</h3>
+
+<p>$150.00 USD</p>
+
+<p>General - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Gold Level 5',150)">Add To Cart</button>
+
+<hr>
+
+
+<h3>Carpet Cleaning 7 Room Areas</h3>
+
+<p>$175.00 USD</p>
+
+<p>General - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('7 Rooms',175)">Add To Cart</button>
+
+<hr>
+
+
+<h3>Fast 48-hour Gold Turnaround</h3>
+
+<p>Landlords and property managers</p>
+
+<p>Pricing by square footage</p>
+
+<p>1,000-5,000 SqFt + Up</p>
+
+<p>Full Service Make Ready</p>
+
+<p>Starting $750.00</p>
+
+<p>General - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Gold Make Ready',750)">Add To Cart</button>
+
+<hr>
+
+
+
+<h2>PLATINUM SERVICES</h2>
+
+
+<h3>Carpet Cleaning Platinum Level 2</h3>
+
+<p>$125.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgraded- Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Platinum 2',125)">Add To Cart</button>
+
+<hr>
+
+
+
+<h3>Carpet Cleaning Platinum Level 3</h3>
+
+<p>$175.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Platinum 3',175)">Add To Cart</button>
+
+<hr>
+
+
+
+<h3>Carpet Cleaning Platinum Level 5</h3>
+
+<p>$225.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade- Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Platinum 5',225)">Add To Cart</button>
+
+<hr>
+
+
+
+<h3>Carpet Cleaning Platinum Level 7</h3>
+
+<p>$275.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade - Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Platinum 7',275)">Add To Cart</button>
+
+<hr>
+
+
+
+<h3>Fast 48-hour Platinum Turnaround</h3>
+
+<p>Landlords and property managers</p>
+
+<p>Pricing by square footage</p>
+
+<p>1,000-5,000 SqFt + Up</p>
+
+<p>Starting at $850.00</p>
+
+<p>Make Ready Full- Services</p>
+
+<button onclick="book()">Book Now</button>
+<button onclick="cart('Platinum Make Ready',850)">Add To Cart</button>
+
+<hr>
+
+
+
+<h2>SHOPPING CART</h2>
+
+<div id="cartBox">
+
+Total $0
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
