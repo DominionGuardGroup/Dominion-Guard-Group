@@ -1,146 +1,43 @@
-body{
+body {
 
-background:black;
+font-family: Arial;
 
-color:white;
-
-font-family:Arial;
+background:#f5f5f5;
 
 text-align:center;
 
 }
 
 
-h1{
-
-color:#D4AF37;
-
-font-size:44px;
-
-}
-
-
-h2{
-
-color:#00A86B;
-
-}
-
-
-h3{
-
-color:#D4AF37;
-
-}
-
-
-button{
-
-background:#D4AF37;
-
-color:black;
-
-padding:14px;
-
-margin:6px;
-
-border:none;
-
-font-size:16px;
-
-cursor:pointer;
-
-width:220px;
-
-}
-
-
-button:hover{
-
-background:#00A86B;
-
-color:white;
-
-}
-
-
-hr{
-
-border:1px solid #D4AF37;
-
-width:60%;
-
-}
-
-
-#cartBox{
-
-border:3px solid #D4AF37;
-
-width:300px;
-
-margin:auto;
-
-padding:20px;
-
-background:#111;
-
-font-size:22px;
-
-}
 img{
+
+margin:20px;
 
 border-radius:10px;
 
-margin:10px;
-
-border:3px solid #D4AF37;
-
-}
-body{
-    background:black;
-    color:white;
-    font-family:Arial;
-    text-align:center;
 }
 
-h1{
-    color:#D4AF37;
-    font-size:42px;
-}
-
-h2{
-    color:#00A86B;
-}
-
-h3{
-    color:#D4AF37;
-}
-
-.service-card {
-    border: 1px solid gold;
-    padding: 20px;
-    margin: 20px;
-    background-color: #111;
-    text-align: center;
-}
-
-.service-card img{
-    width:300px;
-    border-radius:10px;
-}
 
 button{
-    background-color:gold;
-    color:black;
-    padding:10px 20px;
-    margin:5px;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
+
+background:black;
+
+color:white;
+
+padding:10px;
+
+margin:10px;
+
+border-radius:5px;
+
+cursor:pointer;
+
 }
 
-button:hover{
-    background-color:#00A86B;
+
+h1{
+
+color:gold;
+
 }
 
