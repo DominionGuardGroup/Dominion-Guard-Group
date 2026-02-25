@@ -1,292 +1,136 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dominion Guard Group</title>
-
 <link rel="stylesheet" href="styles.css">
-
 </head>
-
-
 <body>
 
 <center>
-
 <img src="images/dominionlogo.png" width="300">
-
 <h1>Dominion Guard Group</h1>
-
-<p>
-Eco Driven Property Protection & Restoration<br>
+<p>Eco Driven Property Protection & Restoration<br>
 Property • Facility • Infrastructure<br>
-Austin Texas + Metro Areas
-</p>
-
-<p>
-Payments: Zelle • Stripe • Bluevine • Cash
-</p>
-
-<hr>
-
-<h2>Gold Carpet Cleaning Packages</h2>
-
-
-<h3>Gold Level 2 - $85</h3>
-<img src="images/gold2.jpg" width="300">
-
-<p>General Carpet Cleaning</p>
-
-<button onclick="addToCart('Gold Level 2',85)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-
-<h3>Gold Level 3 - $100</h3>
-
-<img src="images/gold3.jpg" width="300">
-
-<p>General Carpet Cleaning</p>
-
-<button onclick="addToCart('Gold Level 3',100)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-
-<h3>Gold Level 5 - $150</h3>
-
-<img src="images/gold5.jpg" width="300">
-
-<p>General Carpet Cleaning</p>
-
-<button onclick="addToCart('Gold Level 5',150)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-
-<h3>Gold Level 7 - $175</h3>
-
-<img src="images/gold7.jpg" width="300">
-
-<p>7 Room Areas Cleaning</p>
-
-<button onclick="addToCart('Gold Level 7',175)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-<h2>Platinum Carpet Cleaning Packages</h2>
-
-
-
-<h3>Platinum Level 2 - $125</h3>
-
-<img src="images/platinum2.jpg" width="300">
-
-<p>
-Pet Treatment<br>
-High Traffic<br>
-Stain Removal<br>
-Deodorizer<br>
-Sanitizer
-</p>
-
-<button onclick="addToCart('Platinum Level 2',125)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-
-<h3>Platinum Level 3 - $175</h3>
-
-<img src="images/platinum3.jpg" width="300">
-
-<p>
-Pet Treatment<br>
-High Traffic<br>
-Stain Removal<br>
-Deodorizer<br>
-Sanitizer
-</p>
-
-<button onclick="addToCart('Platinum Level 3',175)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-
-<h3>Platinum Level 5 - $225</h3>
-
-<img src="images/platinum5.jpg" width="300">
-
-<p>
-Pet Treatment<br>
-High Traffic<br>
-Stain Removal<br>
-Deodorizer<br>
-Sanitizer
-</p>
-
-<button onclick="addToCart('Platinum Level 5',225)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-
-<h3>Platinum Level 7 - $275</h3>
-
-<img src="images/platinum7.jpg" width="300">
-
-<p>
-Pet Treatment<br>
-High Traffic<br>
-Stain Removal<br>
-Deodorizer<br>
-Sanitizer
-</p>
-
-<button onclick="addToCart('Platinum Level 7',275)">
-Add To Cart
-</button>
-
-<a href="#booking">
-<button>
-Book Now
-</button>
-</a>
-
-<hr>
-
-
-<h2>Make Ready Services</h2>
-
-<p>
-
-Gold Make Ready<br>
-
-1000-5000 SqFt<br>
-
-48 Hour Turnaround<br>
-
-Starting $750
-
-</p>
-
-<button onclick="addToCart('Gold Make Ready',750)">
-Add To Cart
-</button>
-
-<hr>
-
-
-
-<p>
-
-Platinum Make Ready<br>
-
-1000-5000 SqFt<br>
-
-48 Hour Turnaround<br>
-
-Starting $850
-
-</p>
-
-<button onclick="addToCart('Platinum Make Ready',850)">
-Add To Cart
-</button>
-
-<hr>
-
-
-<h2 id="booking">
-
-BOOK SERVICE
-
-</h2>
-
-<p>
-
-Call or Text
-
-</p>
-
-<h2>
-
-(737) 304-5053
-
-</h2>
-
-<p>
-
-Dominion Guard Group
-
-</p>
-
+Austin Texas + Metro Areas</p>
+<p>Payments: Zelle • Stripe • Bluevine • Cash Flat Rate Discount*</p>
 </center>
 
+<hr>
+
+<h2>Gold Services</h2>
+<div class="service">
+<img src="images/gold1.jpg">
+<h3>Gold Level 1</h3>
+<p>$75.00 USD</p>
+<p>General Services</p>
+<button onclick="addToCart('Gold Level 1',75)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/gold2.jpg">
+<h3>Gold Level 2</h3>
+<p>$85.00 USD</p>
+<p>General Services</p>
+<button onclick="addToCart('Gold Level 2',85)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/gold3.jpg">
+<h3>Gold Level 3</h3>
+<p>$100.00 USD</p>
+<p>General Services</p>
+<button onclick="addToCart('Gold Level 3',100)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/gold5.jpg">
+<h3>Gold Level 5</h3>
+<p>$150.00 USD</p>
+<p>General Services</p>
+<button onclick="addToCart('Gold Level 5',150)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/gold7.jpg">
+<h3>Gold 7 Room Areas</h3>
+<p>$175.00 USD</p>
+<p>General Services</p>
+<button onclick="addToCart('Gold Level 7',175)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<p>Fast 48-hour Gold turnaround for landlords and property managers.<br>
+1,000-5,000 SqFt + Up • Starting $750 • Full Service Make Ready</p>
+
+<hr>
+
+<h2>Platinum Services</h2>
+<div class="service">
+<img src="images/platinum1.jpg">
+<h3>Platinum Level 1</h3>
+<p>$115.00 USD</p>
+<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
+<button onclick="addToCart('Platinum Level 1',115)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/platinum2.jpg">
+<h3>Platinum Level 2</h3>
+<p>$125.00 USD</p>
+<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
+<button onclick="addToCart('Platinum Level 2',125)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/platinum3.jpg">
+<h3>Platinum Level 3</h3>
+<p>$175.00 USD</p>
+<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
+<button onclick="addToCart('Platinum Level 3',175)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/platinum5.jpg">
+<h3>Platinum Level 5</h3>
+<p>$225.00 USD</p>
+<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
+<button onclick="addToCart('Platinum Level 5',225)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<div class="service">
+<img src="images/platinum7.jpg">
+<h3>Platinum Level 7</h3>
+<p>$275.00 USD</p>
+<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
+<button onclick="addToCart('Platinum Level 7',275)">Add To Cart</button>
+<button onclick="bookNow()">Book Now</button>
+</div>
+
+<p>Fast 48-hour Platinum turnaround for landlords and property managers.<br>
+1,000-5,000 SqFt + Up • Starting $850 • Full Service Make Ready</p>
+
+<hr>
+
+<h2>Carpet Examples</h2>
+<img src="images/carpet1.jpg" width="300">
+<img src="images/carpet2.jpg" width="300">
+<img src="images/cleaning1.jpg" width="300">
+
+<hr>
+
+<h2>Your Cart</h2>
+<div id="cart">Cart is empty</div>
+
 <script src="script.js"></script>
-
 </body>
-
 </html>
