@@ -1,591 +1,133 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dominion Guard Group</title>
-
-
-<style>
-
-/* ===== BRAND COLORS ===== */
-
-:root{
-
---black:#050505;
---gold:#C9A227;
---goldLight:#E6C65C;
---emerald:#007A5E;
---emeraldLight:#00A67E;
-
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    color: #333333; 
 }
 
-
-/* ===== BODY ===== */
-
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:var(--black);
-color:white;
-line-height:1.6;
+/* Header */
+header {
+    background-color: #0046be; 
+    color: white;
+    padding: 15px 20px;
 }
 
-
-
-/* ===== HEADER ===== */
-
-header{
-
-background:#000;
-text-align:center;
-padding:40px 20px;
-border-bottom:6px solid var(--gold);
-
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ff9900; 
 }
 
-.logo{
-
-width:200px;
-margin-bottom:10px;
-
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
 }
 
-.company{
-
-font-size:48px;
-font-weight:bold;
-color:var(--gold);
-letter-spacing:2px;
-
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.slogan{
-
-font-size:22px;
-color:var(--emerald);
-margin-top:10px;
-
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-
-
-/* ===== NAVIGATION ===== */
-
-nav{
-
-background:#0b0b0b;
-border-bottom:3px solid var(--emerald);
-padding:18px;
-text-align:center;
-
+/* Hero section */
+.hero {
+    background-color: #ff9900; 
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-nav a{
-
-color:var(--gold);
-margin:20px;
-font-size:20px;
-text-decoration:none;
-font-weight:bold;
-
+.hero button {
+    background-color: #0046be; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-nav a:hover{
-
-color:var(--emerald);
-
+.hero button:hover {
+    background-color: #003399;
 }
 
-
-
-/* ===== HERO ===== */
-
-.hero{
-
-text-align:center;
-padding:90px 20px;
-
+/* Services section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.heroTitle{
-
-font-size:38px;
-color:var(--gold);
-
+.service-card {
+    display: inline-block;
+    background-color: white;
+    color: #0046be; 
+    border: 2px solid #0046be;
+    padding: 20px;
+    margin: 15px;
+    width: 220px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: left;
+    vertical-align: top;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
-.heroSub{
-
-font-size:22px;
-color:var(--emerald);
-margin:20px;
-
+.service-card:hover {
+    transform: translateY(-5px);
 }
 
-
-
-/* ===== BUTTONS ===== */
-
-.button{
-
-background:linear-gradient(
-to bottom,
-var(--goldLight),
-var(--gold)
-);
-
-color:black;
-
-padding:18px 36px;
-
-text-decoration:none;
-
-margin:10px;
-
-display:inline-block;
-
-font-size:18px;
-
-border-radius:6px;
-
-font-weight:bold;
-
+.service-card h3 {
+    font-size: 1.1rem;
+    color: #ff9900; 
 }
 
-.button:hover{
-
-background:var(--emeraldLight);
-color:white;
-
+.service-card .price {
+    font-size: 1.2rem;
+    color: #e60000; 
+    margin: 5px 0;
 }
 
-
-
-/* ===== STRIPES ===== */
-
-.goldStripe{
-
-height:8px;
-background:var(--gold);
-margin:60px 0;
-
+/* Buttons for Book Now and Add to Cart */
+.book-btn,
+.cart-btn {
+    background-color: #ff9900; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 5px 0 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
 }
 
-.greenStripe{
-
-height:6px;
-background:var(--emerald);
-margin:50px 0;
-
+.book-btn:hover,
+.cart-btn:hover {
+    background-color: #e68a00; 
 }
 
-
-
-/* ===== SECTIONS ===== */
-
-.section{
-
-padding:70px 20px;
-text-align:center;
-
+.cart-btn {
+    background-color: #0046be; 
 }
 
-.sectionTitle{
-
-font-size:36px;
-color:var(--gold);
-margin-bottom:30px;
-
+.cart-btn:hover {
+    background-color: #003399;
 }
 
-
-
-/* ===== SERVICES ===== */
-
-.services{
-
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
 }
-
-.serviceBox{
-
-background:#0b0b0b;
-border:2px solid var(--gold);
-width:320px;
-margin:15px;
-padding:25px;
-border-radius:8px;
-
-}
-
-.serviceBox img{
-
-width:100%;
-border-radius:6px;
-margin-bottom:10px;
-
-}
-
-
-
-/* ===== PRICING ===== */
-
-.pricing{
-
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-.priceBox{
-
-background:#0a0a0a;
-border:3px solid var(--emerald);
-width:340px;
-margin:15px;
-padding:25px;
-border-radius:8px;
-
-}
-
-.priceTitle{
-
-color:var(--gold);
-font-size:22px;
-
-}
-
-.priceAmount{
-
-font-size:34px;
-color:var(--gold);
-margin:10px;
-
-}
-
-
-
-/* ===== FOOTER ===== */
-
-footer{
-
-text-align:center;
-padding:40px;
-border-top:6px solid var(--gold);
-background:#000;
-
-}
-
-</style>
-
-</head>
-
-
-
-<body>
-
-
-
-<header>
-
-<!-- PUT YOUR LOGO IN /images/logo.png -->
-
-<img src="images/logo.png" class="logo">
-
-<div class="company">
-Dominion Guard Group
-</div>
-
-<div class="slogan">
-Eco Driven Property Protection & Restoration
-</div>
-
-</header>
-
-
-
-<nav>
-
-<a href="#services">Services</a>
-
-<a href="#pricing">Pricing</a>
-
-<a href="#booking">Booking</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-
-
-<div class="hero">
-
-<div class="heroTitle">
-Property • Facility • Infrastructure Services
-</div>
-
-<div class="heroSub">
-Professional Property Protection & Restoration
-</div>
-
-<a class="button" href="tel:7373045053">
-Call Now
-</a>
-
-</div>
-
-
-
-<div class="goldStripe"></div>
-
-
-
-<div class="section" id="services">
-
-<div class="sectionTitle">
-Property Facility Infrastructure Services
-</div>
-
-
-
-<div class="services">
-
-
-<div class="serviceBox">
-
-<img src="images/carpet.jpg">
-
-<h3>Carpet Cleaning</h3>
-
-<p>
-Eco Driven Deep Cleaning Restoration
-</p>
-
-</div>
-
-
-
-<div class="serviceBox">
-
-<img src="images/property.jpg">
-
-<h3>Property Turnover</h3>
-
-<p>
-Fast 48-hour turnaround for landlords and property managers.
-Pricing by square footage.
-</p>
-
-</div>
-
-
-
-<div class="serviceBox">
-
-<img src="images/tile.jpg">
-
-<h3>Tile & Surface Cleaning</h3>
-
-<p>
-Professional restoration cleaning.
-</p>
-
-</div>
-
-
-
-<div class="serviceBox">
-
-<img src="images/eco.jpg">
-
-<h3>Eco Cleaning</h3>
-
-<p>
-Safe eco driven cleaning technology.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-<div class="greenStripe"></div>
-
-
-
-<div class="section" id="pricing">
-
-<div class="sectionTitle">
-Pricing + Tax
-</div>
-
-
-
-<div class="pricing">
-
-
-<div class="priceBox">
-
-<div class="priceTitle">
-Carpet Cleaning Gold Level 2
-</div>
-
-<div class="priceAmount">
-$85.00
-</div>
-
-<p>General Services</p>
-
-</div>
-
-
-
-<div class="priceBox">
-
-<div class="priceTitle">
-Carpet Cleaning Gold Level 3
-</div>
-
-<div class="priceAmount">
-$100.00
-</div>
-
-<p>General Services</p>
-
-</div>
-
-
-
-<div class="priceBox">
-
-<div class="priceTitle">
-Carpet Cleaning Gold Level 5
-</div>
-
-<div class="priceAmount">
-$150.00
-</div>
-
-<p>General Services</p>
-
-</div>
-
-
-
-<div class="priceBox">
-
-<div class="priceTitle">
-Carpet Cleaning 7 Room Areas
-</div>
-
-<div class="priceAmount">
-$175.00
-</div>
-
-<p>General Services</p>
-
-</div>
-
-
-
-<div class="priceBox">
-
-<div class="priceTitle">
-Property Turnover Service
-</div>
-
-<div class="priceAmount">
-Pricing by Square Footage
-</div>
-
-<p>48 Hour Turnaround</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-<div class="goldStripe"></div>
-
-
-
-<div class="section" id="booking">
-
-<div class="sectionTitle">
-Booking
-</div>
-
-<p>
-Call to schedule service
-</p>
-
-<a class="button" href="tel:7373045053">
-Call (737) 304-5053
-</a>
-
-</div>
-
-
-
-<div class="greenStripe"></div>
-
-
-
-<div class="section" id="contact">
-
-<div class="sectionTitle">
-Contact
-</div>
-
-<p>
-Phone: (737) 304-5053
-</p>
-
-<p>
-Dominionguardgroup.com@outlook.com
-</p>
-
-<p>
-Austin Texas
-</p>
-
-</div>
-
-
-
-<footer>
-
-Dominion Guard Group
-
-<br><br>
-
-Eco Driven Property Protection & Restoration
-
-<br><br>
-
-Property • Facility • Infrastructure Services
-
-</footer>
-
-
-
-</body>
-
-</html>
