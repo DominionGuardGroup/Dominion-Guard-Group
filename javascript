@@ -1,12 +1,10 @@
-let cart = [];
+var cart = [];
 
-function addToCart(service, price) {
+function addToCart(name, price){
+    cart.push(name + " $" + price);
+    document.getElementById("cart").innerHTML = cart.join("<br>");
+}
 
-cart.push({
-service: service,
-price: price
-});
-
-alert(service + " added to cart");
-
+function bookNow(){
+    alert("Booking Request Sent");
 }
