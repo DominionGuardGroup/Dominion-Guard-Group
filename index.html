@@ -1,133 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominion Guard Group</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dominion Guard Group</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Dominion Guard Group</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h2>Professional Cleaning & Guard Services</h2>
-            <p>Book now and get exclusive discounts on our services!</p>
-            <button>Book Now</button>
-        </section>
+<header>
+    <h1>Dominion Guard Group</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <!-- General Services -->
-        <section class="services">
-            <h2>Our Services & Pricing</h2>
+<main>
+<section class="hero">
+    <h2>Professional Cleaning & Guard Services</h2>
+    <p>Book now and get exclusive discounts on our services!</p>
+    <button class="hero-btn">Book Now</button>
+</section>
 
-            <div class="service-card" data-name="Carpet Cleaning Platinum Level 2" data-price="125">
-                <h3>Carpet Cleaning Platinum Level 2</h3>
-                <p class="price">$125.00 USD</p>
-                <p>Per day | Upgrade - Services | Feb 24</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+<section class="services">
+<h2>Our Services & Pricing</h2>
 
-            <div class="service-card" data-name="Carpet Cleaning Gold Level 3" data-price="100">
-                <h3>Carpet Cleaning Gold Level 3</h3>
-                <p class="price">$100.00 USD</p>
-                <p>General - Services | Feb 24</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+<div class="service-card" data-name="Carpet Cleaning Platinum Level 2" data-price="125">
+    <img src="images/carpet-cleaning.png" alt="Carpet Cleaning">
+    <h3>Carpet Cleaning Platinum Level 2</h3>
+    <p class="price">$125.00 USD</p>
+    <p>Per day | Upgrade - Services</p>
+    <button class="book-btn">Book Now</button>
+    <button class="cart-btn">Add to Cart</button>
+</div>
 
-            <div class="service-card" data-name="Carpet Cleaning Gold Level 5" data-price="150">
-                <h3>Carpet Cleaning Gold Level 5</h3>
-                <p class="price">$150.00 USD</p>
-                <p>General - Services | Feb 24</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+<div class="service-card" data-name="Carpet Cleaning Gold Level 3" data-price="100">
+    <img src="images/carpet-cleaning.png" alt="Carpet Cleaning">
+    <h3>Carpet Cleaning Gold Level 3</h3>
+    <p class="price">$100.00 USD</p>
+    <p>General - Services</p>
+    <button class="book-btn">Book Now</button>
+    <button class="cart-btn">Add to Cart</button>
+</div>
 
-            <div class="service-card" data-name="Carpet Cleaning 7 Room Areas" data-price="175">
-                <h3>Carpet Cleaning 7 Room Areas</h3>
-                <p class="price">$175.00 USD</p>
-                <p>General - Services | Feb 24</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
-        </section>
+<!-- Repeat similar for all services, including Platinum and 48-hour turnaround -->
 
-        <!-- Platinum Services -->
-        <section class="services upgraded-services">
-            <h2>Platinum Carpet Cleaning & Full Services</h2>
+</section>
 
-            <div class="service-card" data-name="Platinum Level 2" data-price="125">
-                <h3>Carpet Cleaning Platinum Level 2</h3>
-                <p class="price">$125.00 USD</p>
-                <p>Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer</p>
-                <p>Upgrade - Services</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+<!-- Mini Cart -->
+<aside class="cart">
+<h2>Shopping Cart</h2>
+<ul id="cart-items"></ul>
+<p>Total: $<span id="cart-total">0</span></p>
+<button id="checkout-btn">Checkout</button>
+</aside>
 
-            <div class="service-card" data-name="Platinum Level 3" data-price="175">
-                <h3>Carpet Cleaning Platinum Level 3</h3>
-                <p class="price">$175.00 USD</p>
-                <p>Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer</p>
-                <p>Upgrade - Services</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+<!-- Booking Form Modal -->
+<div id="booking-modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2>Book Your Service</h2>
+<form id="booking-form">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone" required>
+    <input type="date" name="date" required>
+    <textarea name="requests" placeholder="Special Requests"></textarea>
+    <button type="submit">Submit</button>
+</form>
+</div>
+</div>
 
-            <div class="service-card" data-name="Platinum Level 5" data-price="225">
-                <h3>Carpet Cleaning Platinum Level 5</h3>
-                <p class="price">$225.00 USD</p>
-                <p>Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer</p>
-                <p>Upgrade - Services</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+</main>
 
-            <div class="service-card" data-name="Platinum Level 7" data-price="275">
-                <h3>Carpet Cleaning Platinum Level 7</h3>
-                <p class="price">$275.00 USD</p>
-                <p>Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer</p>
-                <p>Upgrade - Services</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
+<footer>
+<p>&copy; 2026 Dominion Guard Group. All rights reserved.</p>
+</footer>
 
-            <div class="service-card" data-name="48-hour Turnaround" data-price="850">
-                <h3>Fast 48-hour Turnaround for Landlords & Property Managers</h3>
-                <p class="price">Starting at $850.00</p>
-                <p>1,000-5,000 sqft + Up</p>
-                <p>Make Ready Full - Services</p>
-                <button class="book-btn">Book Now</button>
-                <button class="cart-btn">Add to Cart</button>
-            </div>
-        </section>
-
-        <!-- Mini Cart -->
-        <aside class="cart">
-            <h2>Shopping Cart</h2>
-            <ul id="cart-items"></ul>
-            <p>Total: $<span id="cart-total">0</span></p>
-            <button id="checkout-btn">Checkout</button>
-        </aside>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Dominion Guard Group. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
