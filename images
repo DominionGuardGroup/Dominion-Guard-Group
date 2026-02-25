@@ -2,7 +2,7 @@
    carpet2.jpg
    cleaning1.jpg
    dominionlogo.png
-│
+│<img src="images/dominionlogo.png" width="300">
 ├── index.html
 ├── styles.css
 ├── script.js
