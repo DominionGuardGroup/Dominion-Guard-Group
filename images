@@ -1,32 +1,13 @@
-DominionGuardWebsite/
-├── index.html
-├── styles.css
-├── script.js
-└── images/
-      dominionlogo.png
-      carpet1.jpg
-      carpet2.jpg
-      cleaning1.jpg
-      gold1.jpg
-      gold2.jpg
-      gold3.jpg
-      gold4.jpg
-      gold5.jpg
-      gold6.jpg
-      gold7.jpg
-      platinum1.jpg
-      platinum2.jpg
-      platinum3.jpg
-      platinum4.jpg
-      platinum5.jpg
-      platinum6.jpg
-      platinum7.jpg
-      luxury1.jpg
-      luxury2.jpg
-      luxury3.jpg
-      luxury4.jpg
-      luxury5.jpg
-      luxury6.jpg
-      luxury7.jpg
-
-
+images/
+   carpet1.jpg
+   carpet2.jpg
+   cleaning1.jpg
+   dominionlogo.png
+   gold2.jpg
+   gold3.jpg
+   gold5.jpg
+   gold7.jpg
+   platinum2.jpg
+   platinum3.jpg
+   platinum5.jpg
+   platinum7.jpg
