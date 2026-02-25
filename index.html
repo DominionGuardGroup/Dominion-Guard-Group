@@ -1,92 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dominion Guard Group</title>
+
 <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Dominion Guard Group</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<main>
-<section class="hero">
-    <h2>Professional Cleaning & Guard Services</h2>
-    <p>Book now and get exclusive discounts on our services!</p>
-    <button class="hero-btn">Book Now</button>
-</section>
+<h1>DOMINION GUARD GROUP</h1>
 
-<section class="services">
-<h2>Our Services & Pricing</h2>
+<h2>Professional Eco-Friendly Carpet Cleaning Services</h2>
 
-<div class="service-card" data-name="Carpet Cleaning Platinum Level 2" data-price="125">
-    <img src="images/carpet-cleaning.png" alt="Carpet Cleaning">
-    <h3>Carpet Cleaning Platinum Level 2</h3>
-    <p class="price">$125.00 USD</p>
-    <p>Per day | Upgrade - Services</p>
-    <button class="book-btn">Book Now</button>
-    <button class="cart-btn">Add to Cart</button>
+<p>Clean • Safe • Fast Dry • Eco Friendly</p>
+
+<hr>
+
+
+
+<h2>PLATINUM UPGRADE SERVICES</h2>
+
+
+
+<h3>Carpet Cleaning Platinum Level 2</h3>
+
+<p>$125.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade Services</p>
+
+<button onclick="book()">Book Now</button>
+
+<button onclick="cart('Platinum 2',125)">
+Add To Cart
+</button>
+
+<hr>
+
+
+
+<h3>Carpet Cleaning Platinum Level 3</h3>
+
+<p>$175.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade Services</p>
+
+<button onclick="book()">Book Now</button>
+
+<button onclick="cart('Platinum 3',175)">
+Add To Cart
+</button>
+
+<hr>
+
+
+
+<h3>Carpet Cleaning Platinum Level 5</h3>
+
+<p>$225.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade Services</p>
+
+<button onclick="book()">Book Now</button>
+
+<button onclick="cart('Platinum 5',225)">
+Add To Cart
+</button>
+
+<hr>
+
+
+
+<h3>Carpet Cleaning Platinum Level 7</h3>
+
+<p>$275.00 USD</p>
+
+<p>
+Pet Treatment<br>
+High Traffic<br>
+Stain Removal<br>
+Deodorizer<br>
+Sanitizer
+</p>
+
+<p>Upgrade Services</p>
+
+<button onclick="book()">Book Now</button>
+
+<button onclick="cart('Platinum 7',275)">
+Add To Cart
+</button>
+
+<hr>
+
+
+
+<h2>MAKE READY FULL SERVICES</h2>
+
+
+
+<h3>Fast 48-Hour Turnaround</h3>
+
+<p>Landlords and Property Managers</p>
+
+<p>Pricing by Square Footage</p>
+
+<p>1,000 - 5,000 sqft + Up</p>
+
+<p>Starting at $850.00</p>
+
+<p>Make Ready Full Services</p>
+
+<button onclick="book()">Book Now</button>
+
+<button onclick="cart('Make Ready',850)">
+Add To Cart
+</button>
+
+<hr>
+
+
+
+<h2>GENERAL SERVICES</h2>
+
+
+<p>
+
+Eco-Friendly Carpet Cleaning<br>
+
+Pet Stain Treatment<br>
+
+Tile Cleaning<br>
+
+Deep Cleaning<br>
+
+Residential Cleaning<br>
+
+Commercial Cleaning
+
+</p>
+
+
+<hr>
+
+
+
+<h2>SHOPPING CART</h2>
+
+
+<div id="cartBox">
+
+Total $0
+
 </div>
 
-<div class="service-card" data-name="Carpet Cleaning Gold Level 3" data-price="100">
-    <img src="images/carpet-cleaning.png" alt="Carpet Cleaning">
-    <h3>Carpet Cleaning Gold Level 3</h3>
-    <p class="price">$100.00 USD</p>
-    <p>General - Services</p>
-    <button class="book-btn">Book Now</button>
-    <button class="cart-btn">Add to Cart</button>
-</div>
-
-<!-- Repeat similar for all services, including Platinum and 48-hour turnaround -->
-
-</section>
-
-<!-- Mini Cart -->
-<aside class="cart">
-<h2>Shopping Cart</h2>
-<ul id="cart-items"></ul>
-<p>Total: $<span id="cart-total">0</span></p>
-<button id="checkout-btn">Checkout</button>
-</aside>
-
-<!-- Booking Form Modal -->
-<div id="booking-modal" class="modal">
-<div class="modal-content">
-<span class="close">&times;</span>
-<h2>Book Your Service</h2>
-<form id="booking-form">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="tel" name="phone" placeholder="Phone" required>
-    <input type="date" name="date" required>
-    <textarea name="requests" placeholder="Special Requests"></textarea>
-    <button type="submit">Submit</button>
-</form>
-</div>
-</div>
-
-</main>
-
-<footer>
-<p>&copy; 2026 Dominion Guard Group. All rights reserved.</p>
-</footer>
 
 <script src="script.js"></script>
+
 </body>
-</html>
-<!-- Link CSS -->
-<link rel="stylesheet" href="styles.css">
 
-<!-- At the bottom of the body -->
-<script src="script.js"></script>
+</html>
+
