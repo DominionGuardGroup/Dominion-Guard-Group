@@ -1,12 +1,13 @@
- carpet1.jpg
-   carpet2.jpg
-   cleaning1.jpg
-   dominionlogo.png
-│<img src="images/dominionlogo.png" width="300">
+DominionGuardWebsite/   ← main website folder
+│
 ├── index.html
 ├── styles.css
 ├── script.js
-└── images/
+└── images/             ← one folder for all images
+      carpet1.jpg       ← optional older images
+      carpet2.jpg
+      cleaning1.jpg
+      dominionlogo.png
       gold2.jpg
       gold3.jpg
       gold5.jpg
@@ -15,4 +16,3 @@
       platinum3.jpg
       platinum5.jpg
       platinum7.jpg
-      dominionlogo.png (if you have a logo)
