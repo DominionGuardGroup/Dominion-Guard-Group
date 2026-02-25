@@ -1,30 +1,87 @@
+/* General styles */
 body {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text for contrast */
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* light gray background */
+    color: #333333; /* dark text */
+}
+
+/* Header */
+header {
+    background-color: #0046be; /* Walmart-style blue */
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ff9900; /* Amazon-style accent orange */
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
 }
 
-h1, h2, h3 {
-    color: #FFD700; /* Gold for headings */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-button {
-    background-color: #008000; /* Emerald green buttons */
-    color: #fff;
-    padding: 10px 20px;
+/* Hero section */
+.hero {
+    background-color: #ff9900; /* Amazon orange */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #0046be; /* Walmart blue */
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #005700; /* Darker green on hover */
+.hero button:hover {
+    background-color: #003399;
+}
+
+/* Services section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-card {
+    display: inline-block;
+    background-color: white;
+    color: #0046be;
+    border: 2px solid #0046be;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
 }
