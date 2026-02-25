@@ -2,3 +2,17 @@
    carpet2.jpg
    cleaning1.jpg
    dominionlogo.png
+│
+├── index.html
+├── styles.css
+├── script.js
+└── images/
+      gold2.jpg
+      gold3.jpg
+      gold5.jpg
+      gold7.jpg
+      platinum2.jpg
+      platinum3.jpg
+      platinum5.jpg
+      platinum7.jpg
+      dominionlogo.png (if you have a logo)
