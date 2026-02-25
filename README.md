@@ -25,7 +25,7 @@ Eco Driven Property Protection & Restoration Property Facility Infrastructure
 
 <p>Payments *Zelle *Stripe *Bluevine *Cash</p>
 
-<p>Flat Rate Discount*</p>
+<p>*Flat Rate Discount*</p>
 
 <hr>
 
