@@ -1,26 +1,11 @@
-DominionGuardWebsite/   ← main website folder
-│
-├── index.html
-├── styles.css
-├── script.js
-└── images/             ← one folder for all images
-      carpet1.jpg       ← optional older images
-      carpet2.jpg
-      cleaning1.jpg
-      dominionlogo.png
-      gold2.jpg
-      gold3.jpg
-      gold5.jpg
-      gold7.jpg
-      platinum2.jpg
-      platinum3.jpg
-      platinum5.jpg
-      platinum7.jpg
+dominionlogo.png
 
-      luxury1.jpg
-      luxury2.jpg
-      luxury3.jpg
-      luxury4.jpg
-      luxury5.jpg
-      luxury6.jpg
-      luxury7.jpg
+gold2.jpg
+gold3.jpg
+gold5.jpg
+gold7.jpg
+
+platinum2.jpg
+platinum3.jpg
+platinum5.jpg
+platinum7.jpg
