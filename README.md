@@ -5,7 +5,7 @@ Eco Driven Property Protection & Restoration Property Facility Infrastructure
 <head>
 
 <title>Dominion Guard Group</title>
-
+<img src="images/dominionlogo.png" width="300">
 <link rel="stylesheet" href="styles.css">
 
 </head>
