@@ -23,7 +23,7 @@ Eco Driven Property Protection & Restoration Property Facility Infrastructure
 
 <p>Austin Texas + Metro Areas</p>
 
-<p>Payment Zelle *Stripe *Bluevine *Cash</p>
+<p>Payments *Zelle *Stripe *Bluevine *Cash</p>
 
 <p>Flat Rate Discount*</p>
 
