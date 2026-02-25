@@ -11,27 +11,20 @@ text-align:center;
 }
 
 
-
 h1{
 
 color:#D4AF37;
 
-font-size:42px;
-
-letter-spacing:3px;
+font-size:44px;
 
 }
-
 
 
 h2{
 
 color:#00A86B;
 
-margin-top:40px;
-
 }
-
 
 
 h3{
@@ -39,15 +32,6 @@ h3{
 color:#D4AF37;
 
 }
-
-
-
-p{
-
-font-size:18px;
-
-}
-
 
 
 button{
@@ -66,10 +50,9 @@ font-size:16px;
 
 cursor:pointer;
 
-width:200px;
+width:220px;
 
 }
-
 
 
 button:hover{
@@ -81,7 +64,6 @@ color:white;
 }
 
 
-
 hr{
 
 border:1px solid #D4AF37;
@@ -89,7 +71,6 @@ border:1px solid #D4AF37;
 width:60%;
 
 }
-
 
 
 #cartBox{
@@ -101,8 +82,6 @@ width:300px;
 margin:auto;
 
 padding:20px;
-
-margin-top:20px;
 
 background:#111;
 
