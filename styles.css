@@ -1,133 +1,67 @@
-/* General styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5; 
-    color: #333333; 
-}
-
-/* Header */
-header {
-    background-color: #0046be; 
-    color: white;
-    padding: 15px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #ff9900; 
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hero section */
-.hero {
-    background-color: #ff9900; 
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.hero button {
-    background-color: #0046be; 
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.hero button:hover {
-    background-color: #003399;
-}
-
-/* Services section */
-.services {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.service-card {
-    display: inline-block;
+.cart {
+    position: fixed;
+    right: 10px;
+    top: 100px;
     background-color: white;
-    color: #0046be; 
     border: 2px solid #0046be;
     padding: 20px;
-    margin: 15px;
-    width: 220px;
-    font-weight: bold;
+    width: 250px;
     border-radius: 10px;
-    text-align: left;
-    vertical-align: top;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
+.cart ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
-.service-card h3 {
-    font-size: 1.1rem;
-    color: #ff9900; 
-}
-
-.service-card .price {
-    font-size: 1.2rem;
-    color: #e60000; 
-    margin: 5px 0;
-}
-
-/* Buttons for Book Now and Add to Cart */
-.book-btn,
-.cart-btn {
-    background-color: #ff9900; 
+#checkout-btn {
+    background-color: #ff9900;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 5px 5px 0 0;
-    font-size: 0.9rem;
-    cursor: pointer;
+    padding: 10px;
+    width: 100%;
     border-radius: 5px;
-    transition: background-color 0.2s;
+    cursor: pointer;
 }
 
-.book-btn:hover,
-.cart-btn:hover {
-    background-color: #e68a00; 
+#checkout-btn:hover {
+    background-color: #e68a00;
+}
+script.js (handles Add to Cart)
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+let cart = [];
+
+document.querySelectorAll(".cart-btn").forEach(btn => {
+    btn.addEventListener("click", e => {
+        const card = e.target.closest(".service-card");
+        const name = card.dataset.name;
+        const price = parseFloat(card.dataset.price);
+
+        cart.push({name, price});
+        updateCart();
+    });
+});
+
+function updateCart() {
+    cartItems.innerHTML = "";
+    let total = 0;
+    cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+        total += item.price;
+    });
+    cartTotal.textContent = total.toFixed(2);
 }
 
-.cart-btn {
-    background-color: #0046be; 
-}
-
-.cart-btn:hover {
-    background-color: #003399;
-}
-
-/* Footer */
-footer {
-    background-color: #333333;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-}
+// Book Now buttons (simple alert for demo)
+document.querySelectorAll(".book-btn").forEach(btn => {
+    btn.addEventListener("click", e => {
+        const card = e.target.closest(".service-card");
+        alert(`Booking: ${card.dataset.name} for $${card.dataset.price}`);
+    });
+});
