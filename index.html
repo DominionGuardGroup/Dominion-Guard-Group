@@ -1,155 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominion Guard Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Global Styles ===== */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
+    body { background-color:#0b0b0b; color:#fff; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
+    .container { width:90%; max-width:1200px; margin:0 auto; }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    /* ===== Hero Section ===== */
+    header { background:linear-gradient(135deg, #000, #0a0a0a); padding:60px 0; text-align:center; }
+    header img { width:150px; margin-bottom:20px; }
+    header h1 { font-size:3rem; color:#FFD700; margin-bottom:10px; }
+    header p { font-size:1.2rem; color:#00A86B; }
 
-<title>Dominion Guard Group</title>
+    /* ===== Navigation ===== */
+    nav { background:#111; display:flex; justify-content:center; padding:15px 0; }
+    nav a { margin:0 20px; font-weight:700; color:#FFD700; transition:0.3s; }
+    nav a:hover { color:#00A86B; }
 
-<link rel="stylesheet" href="styles.css">
+    /* ===== Services Section ===== */
+    .services { padding:60px 0; background:#0b0b0b; }
+    .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; }
+    .service-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+    .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; width:280px; text-align:center; transition:0.3s; }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 5px 20px rgba(255,215,0,0.5); }
+    .service-card img { border-radius:8px; margin-bottom:15px; }
+    .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; }
+    .service-card p { font-size:1rem; color:#fff; }
 
+    /* ===== Packages Section ===== */
+    .packages { padding:60px 0; background:#0a0a0a; }
+    .packages h2 { text-align:center; font-size:2.5rem; color:#00A86B; margin-bottom:40px; }
+    .package-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+    .package-card { background:#111; border:2px solid #00A86B; border-radius:12px; padding:20px; width:320px; text-align:center; transition:0.3s; }
+    .package-card:hover { transform:translateY(-5px); box-shadow:0 5px 20px rgba(0,168,107,0.5); }
+    .package-card img { border-radius:8px; margin-bottom:15px; }
+    .package-card h3 { font-size:1.8rem; color:#FFD700; margin-bottom:10px; }
+    .package-card p { font-size:1rem; color:#fff; margin-bottom:15px; }
+    .package-card .btn { display:inline-block; background:#FFD700; color:#0b0b0b; font-weight:700; padding:10px 20px; border-radius:8px; transition:0.3s; }
+    .package-card .btn:hover { background:#00A86B; color:#fff; }
+
+    /* ===== Booking Section ===== */
+    .booking { padding:60px 0; background:#0b0b0b; text-align:center; }
+    .booking h2 { font-size:2.5rem; color:#FFD700; margin-bottom:20px; }
+    .booking p { font-size:1.2rem; color:#fff; margin-bottom:30px; }
+    .booking form { display:flex; flex-direction:column; align-items:center; gap:15px; }
+    .booking input, .booking select, .booking textarea { padding:12px; width:300px; border-radius:8px; border:1px solid #FFD700; background:#111; color:#fff; }
+    .booking button { background:#00A86B; color:#fff; padding:12px 25px; border:none; border-radius:8px; font-weight:700; cursor:pointer; transition:0.3s; }
+    .booking button:hover { background:#FFD700; color:#0b0b0b; }
+
+    /* ===== Contact Section ===== */
+    .contact { padding:40px 0; text-align:center; background:#111; }
+    .contact h3 { color:#FFD700; margin-bottom:15px; }
+    .contact p { color:#fff; margin-bottom:10px; }
+
+    /* ===== Footer ===== */
+    footer { padding:20px 0; text-align:center; background:#000; color:#777; }
+
+    /* ===== Responsive ===== */
+    @media (max-width:900px) { .service-cards, .package-cards { flex-direction:column; align-items:center; } }
+  </style>
 </head>
-
-
 <body>
 
-
-<header>
-
-<img src="logo.png" class="logo">
-
-<h1>DOMINION GUARD GROUP</h1>
-
-<p class="tagline">
-
-Luxury Carpet & Property Cleaning Services
-
-</p>
-
-</header>
-
-
-
-<section class="service-area">
-
-<h2>Service Area</h2>
-
-<p>
-
-Austin Texas + Metro Areas
-
-</p>
-
-</section>
-
-
-
-<section class="packages">
-
-<h2>Cleaning Packages</h2>
-
-
-<div class="package">
-
-<h3>Gold Level Cleaning</h3>
-
-<img src="gold.png">
-
-<p>
-
-Clean & Dry Carpet Cleaning<br><br>
-
-Pet Stain Treatment<br>
-
-Tile & Grout Deep Clean<br>
-
-Full Move-Out Final Clean<br><br>
-
-Fast 48 Hour Turnaround
-
-</p>
-
-</div>
-
-
-
-<div class="package">
-
-<h3>Platinum Level Cleaning</h3>
-
-<img src="platinum.png">
-
-<p>
-
-Clean & Dry Carpet Cleaning<br><br>
-
-Pet Stain Treatment<br>
-
-Tile & Grout Deep Clean<br>
-
-Full Move-Out Final Clean<br><br>
-
-Fast 48 Hour Turnaround
-
-</p>
-
-</div>
-
-
-</section>
-
-
-
-<section class="payments">
-
-<h2>Payments Accepted</h2>
-
-<p>
-
-Zelle • Stripe • Bluevine • Cash
-
-</p>
-
-<p>
-
-Flat Rate Discount Available
-
-</p>
-
-</section>
-
-
-
-<section class="booking">
-
-<h2>Booking</h2>
-
-<p>
-
-Email Booking:
-
-</p>
-
-<p class="email">
-
-dominionguardgroup.com@outlook.com
-
-</p>
-
-</section>
-
-
-
-
-<footer>
-
-Dominion Guard Group © 2026
-
-</footer>
-
+  <!-- Hero / Shield Section -->
+  <header>
+    <img src="https://via.placeholder.com/150x150?text=Shield" alt="Dominion Guard Shield Logo">
+    <h1>Dominion Guard Group</h1>
+    <p>Executive Carpet & Home Services — Austin, TX & Metro Areas</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#packages">Packages</a>
+    <a href="#booking">Book Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Luxury Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="https://via.placeholder.com/280x180?text=Carpet+Cleaning" alt="Carpet Cleaning">
+        <h3>Eco-Friendly Carpet Cleaning</h3>
+        <p>Clean & dry carpets using eco-friendly solutions. Pet stain treatment included.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://via.placeholder.com/280x180?text=Tile+Cleaning" alt="Tile Cleaning">
+        <h3>Tile & Grout Cleaning</h3>
+        <p>Deep cleaning for tiles & grout with professional care, restoring shine.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://via.placeholder.com/280x180?text=Furniture+Cleaning" alt="Furniture Cleaning">
+        <h3>Luxury Furniture Cleaning</h3>
+        <p>Executive-grade treatment for sofas, chairs, and all home furniture surfaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages" id="packages">
+    <h2>Gold & Platinum Packages</h2>
+    <div class="package-cards">
+      <div class="package-card">
+        <img src="https://via.placeholder.com/320x180?text=Gold+Package" alt="Gold Package">
+        <h3>Gold Package</h3>
+        <p>Professional cleaning for carpets, tiles, and furniture with premium products.</p>
+        <a href="#booking" class="btn">Book Now</a>
+      </div>
+      <div class="package-card">
+        <img src="https://via.placeholder.com/320x180?text=Platinum+Package" alt="Platinum Package">
+        <h3>Platinum Package</h3>
+        <p>All-inclusive home care: carpet, tile, furniture, and special stain treatment.</p>
+        <a href="#booking" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking" id="booking">
+    <h2>Book Your Service Today</h2>
+    <p>Payments accepted: Zelle • Stripe • Bluevine • Cash | Flat Rate Discount Available</p>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Package</option>
+        <option value="gold">Gold Package</option>
+        <option value="platinum">Platinum Package</option>
+      </select>
+      <textarea placeholder="Additional Notes" rows="4"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+    <p>Email us at: <strong>dominionguardgroup.com@outlook.com</strong></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h3>Contact Us</h3>
+    <p>Austin, TX & Metro Areas</p>
+    <p>Phone: (737) 304-5053</p>
+    <p>Email: dominionguardgroup.com@outlook.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Dominion Guard Group. All Rights Reserved.
+  </footer>
 
 </body>
-
 </html>
