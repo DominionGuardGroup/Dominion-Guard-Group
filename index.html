@@ -1,170 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dominion Guard Group</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
-    body { background-color:#0b0b0b; color:#fff; line-height:1.6; }
-    a { color:inherit; text-decoration:none; }
-    .container { width:90%; max-width:1200px; margin:0 auto; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dominion Guard Group</title>
 
-    header { background:linear-gradient(135deg, #000, #0a0a0a); padding:80px 0; text-align:center; }
-    header h1 { font-size:3rem; background: linear-gradient(90deg, #FFD700, #FFC700, #FFEB00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow:0 0 10px #FFD700, 0 0 20px #FFEB00; margin-bottom:10px; }
+<style>
 
-    nav { background:#111; display:flex; justify-content:center; padding:15px 0; flex-wrap:wrap; }
-    nav a { margin:0 20px; font-weight:700; color:#FFD700; transition:0.3s; }
-    nav a:hover { color:#00A86B; }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-    .services { padding:60px 0; background:#0b0b0b; }
-    .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; text-shadow:0 0 5px #FFD700; }
-    .service-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
-    .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; transition:0.3s; }
-    .service-card:hover { box-shadow:0 0 20px #FFD700; }
-    .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; text-shadow:0 0 3px #FFD700; }
-    .service-card p { font-size:1rem; color:#fff; }
+body{
+background:#050505;
+color:white;
+}
 
-    .packages { padding:60px 0; background:#0a0a0a; }
-    .packages h2 { text-align:center; font-size:2.5rem; color:#00A86B; margin-bottom:40px; text-shadow:0 0 5px #00A86B; }
-    .package-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
-    .package-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; transition:0.3s; }
-    .package-card:hover { box-shadow:0 0 20px #FFD700; }
-    .package-card h3 { font-size:1.8rem; color:#FFD700; margin-bottom:10px; text-shadow:0 0 5px #FFD700; }
-    .package-card p, .package-card ul { font-size:1rem; color:#fff; margin-bottom:10px; }
-    .package-card ul { text-align:left; list-style:disc; margin-left:20px; }
-    .package-card ul li { margin-bottom:5px; }
-    .package-card .btn { display:inline-block; background:#FFD700; color:#0b0b0b; font-weight:700; padding:10px 20px; border-radius:8px; transition:0.3s; }
-    .package-card .btn:hover { background:#00A86B; color:#fff; }
+/* METALLIC GOLD SHINE */
 
-    .booking { padding:60px 0; background:#0b0b0b; text-align:center; }
-    .booking h2 { font-size:2.5rem; color:#FFD700; margin-bottom:20px; text-shadow:0 0 5px #FFD700; }
-    .booking p { font-size:1.2rem; color:#fff; margin-bottom:30px; }
-    .booking form { display:flex; flex-direction:column; align-items:center; gap:15px; }
-    .booking input, .booking select, .booking textarea { padding:12px; width:300px; border-radius:8px; border:1px solid #FFD700; background:#111; color:#fff; }
-    .booking button { background:#00A86B; color:#fff; padding:12px 25px; border:none; border-radius:8px; font-weight:700; cursor:pointer; transition:0.3s; }
-    .booking button:hover { background:#FFD700; color:#0b0b0b; }
+@keyframes goldShine{
+0%{background-position:0%}
+100%{background-position:200%}
+}
 
-    .contact { padding:40px 0; text-align:center; background:#111; }
-    .contact h3 { color:#FFD700; margin-bottom:15px; }
-    .contact p { color:#fff; margin-bottom:10px; }
+.goldText{
 
-    footer { padding:20px 0; text-align:center; background:#000; color:#777; }
+background:linear-gradient(
+90deg,
+#b89600,
+#ffd700,
+#fff4a3,
+#ffd700,
+#b89600
+);
 
-    @media (max-width:900px) { .service-cards, .package-cards { flex-direction:column; align-items:center; } }
-  </style>
+background-size:200%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:goldShine 6s linear infinite;
+
+text-shadow:
+
+0 0 5px #ffd700,
+0 0 15px #ffd700,
+0 0 30px #ffd700;
+}
+
+
+/* EMERALD GLOW */
+
+.emerald{
+
+color:#00c46a;
+
+text-shadow:
+
+0 0 5px #00c46a,
+0 0 15px #00c46a,
+0 0 30px #00c46a;
+}
+
+
+/* HEADER */
+
+header{
+
+padding:80px 0;
+text-align:center;
+background:#000;
+border-bottom:2px solid #ffd700;
+}
+
+header h1{
+
+font-size:48px;
+}
+
+nav{
+
+background:#000;
+padding:15px;
+text-align:center;
+border-bottom:1px solid #ffd700;
+}
+
+nav a{
+
+margin:15px;
+color:#ffd700;
+font-weight:bold;
+text-decoration:none;
+}
+
+nav a:hover{
+
+color:#00c46a;
+}
+
+
+/* SECTIONS */
+
+section{
+
+padding:60px 20px;
+text-align:center;
+}
+
+
+/* CARDS */
+
+.card{
+
+background:#0a0a0a;
+
+border:2px solid #ffd700;
+
+border-radius:14px;
+
+padding:25px;
+
+margin:25px auto;
+
+max-width:800px;
+
+transition:.4s;
+}
+
+.card:hover{
+
+box-shadow:
+
+0 0 20px #ffd700,
+0 0 40px #ffd700;
+}
+
+
+/* BOOKING */
+
+input,select,textarea{
+
+width:300px;
+
+padding:12px;
+
+margin:8px;
+
+background:black;
+
+border:1px solid #ffd700;
+
+color:white;
+
+border-radius:6px;
+}
+
+button{
+
+background:#00c46a;
+
+color:white;
+
+padding:14px 25px;
+
+border:none;
+
+border-radius:8px;
+
+font-weight:bold;
+
+cursor:pointer;
+}
+
+button:hover{
+
+background:#ffd700;
+color:black;
+}
+
+
+/* FOOTER */
+
+footer{
+
+padding:30px;
+
+background:black;
+
+text-align:center;
+
+color:#777;
+}
+
+</style>
 </head>
+
+
 <body>
 
-  <header>
-    <h1>Dominion Guard Group</h1>
-  </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#packages">Packages</a>
-    <a href="#booking">Book Now</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
 
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="service-card">
-        <h3>Eco Driven Property Protection & Restoration</h3>
-        <p>High-quality sustainable property cleaning and restoration services for landlords and property managers.</p>
-      </div>
-      <div class="service-card">
-        <h3>Professional Property Protection & Restoration</h3>
-        <p>Executive-grade protection and restoration ensuring properties remain in pristine condition.</p>
-      </div>
-      <div class="service-card">
-        <h3>Property • Facility • Infrastructure Services</h3>
-        <p>Comprehensive care for property, facilities, and infrastructure to maximize value and longevity.</p>
-      </div>
-    </div>
-  </section>
+<h1 class="goldText">
 
-  <section class="packages" id="packages">
-    <h2>Carpet Cleaning & Tile Services</h2>
-    <div class="package-cards">
+Dominion Guard Group
 
-      <!-- Gold Carpet Cleaning -->
-      <div class="package-card">
-        <h3>Gold Carpet Cleaning</h3>
-        <ul>
-          <li>Gold Level 2 – $85 USD – General Services</li>
-          <li>Gold Level 3 – $100 USD – General Services</li>
-          <li>Gold Level 5 – $150 USD – General Services</li>
-          <li>Gold Level 7 / 7 Room Areas – $175 USD – General Services</li>
-        </ul>
-      </div>
+</h1>
 
-      <!-- Platinum Carpet Cleaning -->
-      <div class="package-card">
-        <h3>Platinum Carpet Cleaning</h3>
-        <ul>
-          <li>Platinum Level 2 – $125 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgraded Services)</li>
-          <li>Platinum Level 3 – $175 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgrade Services)</li>
-          <li>Platinum Level 5 – $225 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgrade Services)</li>
-          <li>Platinum Level 7 – $275 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgrade Services)</li>
-        </ul>
-      </div>
+</header>
 
-      <!-- Tile & Grout / Sealant -->
-      <div class="package-card">
-        <h3>Tile & Grout / Sealant</h3>
-        <ul>
-          <li>Basic – $1.00 per SqFt</li>
-          <li>Deep Cleaning – $1.50 per SqFt</li>
-          <li>Cleaning, Sealing & Restoration – $2.50 per SqFt</li>
-        </ul>
-      </div>
 
-      <!-- Fast 48-hour Make Ready -->
-      <div class="package-card">
-        <h3>Fast 48-hour Make Ready</h3>
-        <ul>
-          <li>Landlord / Property Manager Special – 1,000–5,000 SqFt</li>
-          <li>Starting $750 – Full Make Ready: Carpet, Tile, Property Prep</li>
-          <li>Tile & Grout / Sealant Make Ready (Separate) – Basic → Deep Cleaning → Cleaning/Sealing/Restoration</li>
-        </ul>
-      </div>
+<nav>
 
-    </div>
-  </section>
+<a href="#gold">Gold</a>
 
-  <section class="booking" id="booking">
-    <h2>Book Your Service Today</h2>
-    <p>Payments accepted: Zelle • Stripe • Bluevine • Cash | Flat Rate Discount Available</p>
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <select required>
-        <option value="">Select Package</option>
-        <option value="gold">Gold Carpet Cleaning</option>
-        <option value="platinum">Platinum Carpet Cleaning</option>
-        <option value="tile">Tile & Grout / Sealant</option>
-        <option value="fast48">Fast 48-hour Make Ready</option>
-      </select>
-      <textarea placeholder="Additional Notes" rows="4"></textarea>
-      <button type="submit">Submit Booking</button>
-    </form>
-    <p>Email us at: <strong>dominionguardgroup.com@outlook.com</strong></p>
-  </section>
+<a href="#platinum">Platinum</a>
 
-  <section class="contact" id="contact">
-    <h3>Contact Us</h3>
-    <p>Austin, TX & Metro Areas</p>
-    <p>Phone: (737) 304-5053</p>
-    <p>Email: dominionguardgroup.com@outlook.com</p>
-  </section>
+<a href="#tile">Tile & Grout</a>
 
-  <footer>
-    &copy; 2026 Dominion Guard Group. All Rights Reserved.
-  </footer>
+<a href="#fast">Fast 48</a>
+
+<a href="#book">Booking</a>
+
+</nav>
+
+
+
+<section id="gold">
+
+<h2 class="emerald">
+
+Gold Carpet Cleaning
+
+</h2>
+
+
+<div class="card">
+
+Gold Level 2 — $85<br>
+General Services
+
+</div>
+
+<div class="card">
+
+Gold Level 3 — $100<br>
+General Services
+
+</div>
+
+<div class="card">
+
+Gold Level 5 — $150<br>
+General Services
+
+</div>
+
+<div class="card">
+
+Gold Level 7 — $175<br>
+General Services
+
+</div>
+
+</section>
+
+
+
+
+<section id="platinum">
+
+<h2 class="emerald">
+
+Platinum Carpet Cleaning
+
+</h2>
+
+
+<div class="card">
+
+Platinum Level 2 — $125<br>
+
+Pet Treatment<br>
+
+High Traffic<br>
+
+Stain Removal<br>
+
+Deodorizer<br>
+
+Sanitizer
+
+</div>
+
+
+
+<div class="card">
+
+Platinum Level 3 — $175<br>
+
+Pet Treatment<br>
+
+High Traffic<br>
+
+Stain Removal<br>
+
+Deodorizer<br>
+
+Sanitizer
+
+</div>
+
+
+
+<div class="card">
+
+Platinum Level 5 — $225<br>
+
+Pet Treatment<br>
+
+High Traffic<br>
+
+Stain Removal<br>
+
+Deodorizer<br>
+
+Sanitizer
+
+</div>
+
+
+
+<div class="card">
+
+Platinum Level 7 — $275<br>
+
+Pet Treatment<br>
+
+High Traffic<br>
+
+Stain Removal<br>
+
+Deodorizer<br>
+
+Sanitizer
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="tile">
+
+<h2 class="emerald">
+
+Tile & Grout / Sealant
+
+</h2>
+
+
+<div class="card">
+
+Basic — $1.00 per SqFt
+
+</div>
+
+<div class="card">
+
+Deep Cleaning — $1.50 per SqFt
+
+</div>
+
+<div class="card">
+
+Cleaning Sealing Restoration — $2.50 per SqFt
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="fast">
+
+<h2 class="emerald">
+
+Fast 48-Hour Make Ready
+
+</h2>
+
+
+<div class="card">
+
+Landlords • Property Managers
+
+<br><br>
+
+1,000 – 5,000 SqFt
+
+<br><br>
+
+Starting $750
+
+<br><br>
+
+Full Property Make Ready
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="book">
+
+<h2 class="goldText">
+
+Book Service
+
+</h2>
+
+
+<input placeholder="Name"><br>
+
+<input placeholder="Phone"><br>
+
+<input placeholder="Email"><br>
+
+
+<select>
+
+<option>Select Service</option>
+
+<option>Gold Cleaning</option>
+
+<option>Platinum Cleaning</option>
+
+<option>Tile & Grout</option>
+
+<option>Fast 48 Make Ready</option>
+
+</select>
+
+
+<br>
+
+<textarea rows="4" placeholder="Details"></textarea>
+
+<br>
+
+<button>
+
+Submit Booking
+
+</button>
+
+
+</section>
+
+
+
+<footer>
+
+Dominion Guard Group © 2026
+
+</footer>
+
 
 </body>
+
 </html>
