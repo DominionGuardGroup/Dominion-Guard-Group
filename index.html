@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,39 +6,26 @@
   <title>Dominion Guard Group</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* ===== Global Styles ===== */
     * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
     body { background-color:#0b0b0b; color:#fff; line-height:1.6; }
     a { color:inherit; text-decoration:none; }
-    img { max-width:100%; display:block; }
     .container { width:90%; max-width:1200px; margin:0 auto; }
 
-    /* ===== Hero Section ===== */
     header { background:linear-gradient(135deg, #000, #0a0a0a); padding:80px 0; text-align:center; }
-    header h1 { 
-      font-size:3rem; 
-      background: linear-gradient(90deg, #FFD700, #FFC700, #FFEB00); 
-      -webkit-background-clip: text; 
-      -webkit-text-fill-color: transparent; 
-      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFEB00;
-      margin-bottom:10px; 
-    }
+    header h1 { font-size:3rem; background: linear-gradient(90deg, #FFD700, #FFC700, #FFEB00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow:0 0 10px #FFD700, 0 0 20px #FFEB00; margin-bottom:10px; }
 
-    /* ===== Navigation ===== */
     nav { background:#111; display:flex; justify-content:center; padding:15px 0; flex-wrap:wrap; }
     nav a { margin:0 20px; font-weight:700; color:#FFD700; transition:0.3s; }
     nav a:hover { color:#00A86B; }
 
-    /* ===== Services Section ===== */
     .services { padding:60px 0; background:#0b0b0b; }
-    .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; text-shadow: 0 0 5px #FFD700; }
+    .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; text-shadow:0 0 5px #FFD700; }
     .service-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
     .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; transition:0.3s; }
     .service-card:hover { box-shadow:0 0 20px #FFD700; }
-    .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; text-shadow: 0 0 3px #FFD700; }
+    .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; text-shadow:0 0 3px #FFD700; }
     .service-card p { font-size:1rem; color:#fff; }
 
-    /* ===== Packages Section ===== */
     .packages { padding:60px 0; background:#0a0a0a; }
     .packages h2 { text-align:center; font-size:2.5rem; color:#00A86B; margin-bottom:40px; text-shadow:0 0 5px #00A86B; }
     .package-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
@@ -52,7 +38,6 @@
     .package-card .btn { display:inline-block; background:#FFD700; color:#0b0b0b; font-weight:700; padding:10px 20px; border-radius:8px; transition:0.3s; }
     .package-card .btn:hover { background:#00A86B; color:#fff; }
 
-    /* ===== Booking Section ===== */
     .booking { padding:60px 0; background:#0b0b0b; text-align:center; }
     .booking h2 { font-size:2.5rem; color:#FFD700; margin-bottom:20px; text-shadow:0 0 5px #FFD700; }
     .booking p { font-size:1.2rem; color:#fff; margin-bottom:30px; }
@@ -61,26 +46,21 @@
     .booking button { background:#00A86B; color:#fff; padding:12px 25px; border:none; border-radius:8px; font-weight:700; cursor:pointer; transition:0.3s; }
     .booking button:hover { background:#FFD700; color:#0b0b0b; }
 
-    /* ===== Contact Section ===== */
     .contact { padding:40px 0; text-align:center; background:#111; }
     .contact h3 { color:#FFD700; margin-bottom:15px; }
     .contact p { color:#fff; margin-bottom:10px; }
 
-    /* ===== Footer ===== */
     footer { padding:20px 0; text-align:center; background:#000; color:#777; }
 
-    /* ===== Responsive ===== */
     @media (max-width:900px) { .service-cards, .package-cards { flex-direction:column; align-items:center; } }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
   <header>
     <h1>Dominion Guard Group</h1>
   </header>
 
-  <!-- Navigation -->
   <nav>
     <a href="#services">Services</a>
     <a href="#packages">Packages</a>
@@ -88,7 +68,6 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Services Section -->
   <section class="services" id="services">
     <h2>Our Services</h2>
     <div class="service-cards">
@@ -107,7 +86,6 @@
     </div>
   </section>
 
-  <!-- Packages Section -->
   <section class="packages" id="packages">
     <h2>Carpet Cleaning & Tile Services</h2>
     <div class="package-cards">
@@ -144,10 +122,19 @@
         </ul>
       </div>
 
+      <!-- Fast 48-hour Make Ready -->
+      <div class="package-card">
+        <h3>Fast 48-hour Make Ready</h3>
+        <ul>
+          <li>Landlord / Property Manager Special – 1,000–5,000 SqFt</li>
+          <li>Starting $750 – Full Make Ready: Carpet, Tile, Property Prep</li>
+          <li>Tile & Grout / Sealant Make Ready (Separate) – Basic → Deep Cleaning → Cleaning/Sealing/Restoration</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
-  <!-- Booking Section -->
   <section class="booking" id="booking">
     <h2>Book Your Service Today</h2>
     <p>Payments accepted: Zelle • Stripe • Bluevine • Cash | Flat Rate Discount Available</p>
@@ -160,6 +147,7 @@
         <option value="gold">Gold Carpet Cleaning</option>
         <option value="platinum">Platinum Carpet Cleaning</option>
         <option value="tile">Tile & Grout / Sealant</option>
+        <option value="fast48">Fast 48-hour Make Ready</option>
       </select>
       <textarea placeholder="Additional Notes" rows="4"></textarea>
       <button type="submit">Submit Booking</button>
@@ -167,7 +155,6 @@
     <p>Email us at: <strong>dominionguardgroup.com@outlook.com</strong></p>
   </section>
 
-  <!-- Contact Section -->
   <section class="contact" id="contact">
     <h3>Contact Us</h3>
     <p>Austin, TX & Metro Areas</p>
@@ -175,7 +162,6 @@
     <p>Email: dominionguardgroup.com@outlook.com</p>
   </section>
 
-  <!-- Footer -->
   <footer>
     &copy; 2026 Dominion Guard Group. All Rights Reserved.
   </footer>
