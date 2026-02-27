@@ -1,42 +1,462 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
+/* ===============================
+DOMINION GUARD GROUP MASTER CSS
+Black • Metallic Gold • Emerald
+=============================== */
+
+
+/* ===== BRAND COLORS ===== */
+
+:root{
+
+--black:#050505;
+
+--deepBlack:#000000;
+
+--gold:#C9A227;
+
+--goldHighlight:#E6C65C;
+
+--emerald:#007A5E;
+
+--emeraldBright:#00A67E;
+
+--darkGray:#0b0b0b;
+
 }
 
-h1 { color: gold; }
-h2 { color: #50C878; } /* Emerald Green */
 
-.service {
-    border: 2px solid gold;
-    padding: 20px;
-    margin: 20px;
-    background-color: #111;
-    display: inline-block;
+
+/* ===== BODY ===== */
+
+body{
+
+margin:0;
+
+font-family:Arial, Helvetica, sans-serif;
+
+background:var(--black);
+
+color:white;
+
+line-height:1.6;
+
 }
 
-.service img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 10px;
+
+
+/* ===== HEADER ===== */
+
+header{
+
+background:var(--deepBlack);
+
+text-align:center;
+
+padding:40px 20px;
+
+border-bottom:6px solid var(--gold);
+
 }
 
-.luxury-gallery img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px gold;
+
+
+.logo{
+
+width:220px;
+
+margin-bottom:10px;
+
 }
 
-button {
-    background-color: gold;
-    color: black;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+
+
+.company{
+
+font-size:48px;
+
+font-weight:bold;
+
+color:var(--gold);
+
+letter-spacing:2px;
+
 }
 
+
+
+.slogan{
+
+font-size:22px;
+
+color:var(--emerald);
+
+margin-top:10px;
+
+}
+
+
+
+/* ===== NAVIGATION ===== */
+
+nav{
+
+background:#0a0a0a;
+
+border-bottom:3px solid var(--emerald);
+
+padding:18px;
+
+text-align:center;
+
+}
+
+
+
+nav a{
+
+color:var(--gold);
+
+margin:20px;
+
+font-size:20px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+color:var(--emerald);
+
+}
+
+
+
+/* ===== HERO AREA ===== */
+
+.hero{
+
+text-align:center;
+
+padding:90px 20px;
+
+}
+
+
+
+.heroTitle{
+
+font-size:40px;
+
+color:var(--gold);
+
+}
+
+
+
+.heroSub{
+
+font-size:22px;
+
+color:var(--emerald);
+
+margin:20px;
+
+}
+
+
+
+/* ===== BUTTONS ===== */
+
+.button{
+
+background:linear-gradient(
+to bottom,
+var(--goldHighlight),
+var(--gold)
+);
+
+color:black;
+
+padding:18px 36px;
+
+text-decoration:none;
+
+margin:10px;
+
+display:inline-block;
+
+font-size:18px;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+
+
+.button:hover{
+
+background:var(--emeraldBright);
+
+color:white;
+
+}
+
+
+
+/* ===== DIVIDER STRIPES ===== */
+
+.goldStripe{
+
+height:8px;
+
+background:var(--gold);
+
+margin:60px 0;
+
+}
+
+
+
+.greenStripe{
+
+height:6px;
+
+background:var(--emerald);
+
+margin:50px 0;
+
+}
+
+
+
+/* ===== SECTIONS ===== */
+
+.section{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+
+
+.sectionTitle{
+
+font-size:36px;
+
+color:var(--gold);
+
+margin-bottom:25px;
+
+}
+
+
+
+/* ===== SERVICES GRID ===== */
+
+.services{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+
+.serviceBox{
+
+background:var(--darkGray);
+
+border:2px solid var(--gold);
+
+width:320px;
+
+margin:15px;
+
+padding:25px;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+
+
+.serviceBox:hover{
+
+transform:scale(1.03);
+
+border-color:var(--emerald);
+
+}
+
+
+
+.serviceBox img{
+
+width:100%;
+
+border-radius:6px;
+
+margin-bottom:12px;
+
+}
+
+
+
+/* ===== PRICING GRID ===== */
+
+.pricing{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+
+.priceBox{
+
+background:var(--darkGray);
+
+border:3px solid var(--emerald);
+
+width:340px;
+
+margin:15px;
+
+padding:25px;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+
+
+.priceBox:hover{
+
+border-color:var(--gold);
+
+transform:scale(1.02);
+
+}
+
+
+
+.priceTitle{
+
+color:var(--gold);
+
+font-size:22px;
+
+}
+
+
+
+.priceAmount{
+
+font-size:34px;
+
+color:var(--gold);
+
+margin:10px;
+
+}
+
+
+
+/* ===== BOOKING ===== */
+
+.bookingText{
+
+font-size:20px;
+
+margin-bottom:20px;
+
+}
+
+
+
+/* ===== CONTACT ===== */
+
+.contactText{
+
+font-size:20px;
+
+margin:8px;
+
+}
+
+
+
+/* ===== FOOTER ===== */
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+border-top:6px solid var(--gold);
+
+background:var(--deepBlack);
+
+font-size:16px;
+
+}
+
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:800px){
+
+.services{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+.pricing{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+.company{
+
+font-size:36px;
+
+}
+
+
+.heroTitle{
+
+font-size:30px;
+
+}
+
+}
