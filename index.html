@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +15,15 @@
     .container { width:90%; max-width:1200px; margin:0 auto; }
 
     /* ===== Hero Section ===== */
-    header { background:linear-gradient(135deg, #000, #0a0a0a); padding:60px 0; text-align:center; }
-    header img { width:150px; margin-bottom:20px; }
-    header h1 { font-size:3rem; color:#FFD700; margin-bottom:10px; }
+    header { background:linear-gradient(135deg, #000, #0a0a0a); padding:80px 0; text-align:center; }
+    header h1 { 
+      font-size:3rem; 
+      background: linear-gradient(90deg, #FFD700, #FFC700, #FFEB00); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFEB00;
+      margin-bottom:10px; 
+    }
 
     /* ===== Navigation ===== */
     nav { background:#111; display:flex; justify-content:center; padding:15px 0; flex-wrap:wrap; }
@@ -25,25 +32,29 @@
 
     /* ===== Services Section ===== */
     .services { padding:60px 0; background:#0b0b0b; }
-    .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; }
+    .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; text-shadow: 0 0 5px #FFD700; }
     .service-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
-    .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; }
-    .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; }
+    .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; transition:0.3s; }
+    .service-card:hover { box-shadow:0 0 20px #FFD700; }
+    .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; text-shadow: 0 0 3px #FFD700; }
     .service-card p { font-size:1rem; color:#fff; }
 
     /* ===== Packages Section ===== */
     .packages { padding:60px 0; background:#0a0a0a; }
-    .packages h2 { text-align:center; font-size:2.5rem; color:#00A86B; margin-bottom:40px; }
+    .packages h2 { text-align:center; font-size:2.5rem; color:#00A86B; margin-bottom:40px; text-shadow:0 0 5px #00A86B; }
     .package-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
-    .package-card { background:#111; border:2px solid #00A86B; border-radius:12px; padding:20px; text-align:center; }
-    .package-card h3 { font-size:1.8rem; color:#FFD700; margin-bottom:10px; }
-    .package-card p { font-size:1rem; color:#fff; margin-bottom:15px; }
+    .package-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; transition:0.3s; }
+    .package-card:hover { box-shadow:0 0 20px #FFD700; }
+    .package-card h3 { font-size:1.8rem; color:#FFD700; margin-bottom:10px; text-shadow:0 0 5px #FFD700; }
+    .package-card p, .package-card ul { font-size:1rem; color:#fff; margin-bottom:10px; }
+    .package-card ul { text-align:left; list-style:disc; margin-left:20px; }
+    .package-card ul li { margin-bottom:5px; }
     .package-card .btn { display:inline-block; background:#FFD700; color:#0b0b0b; font-weight:700; padding:10px 20px; border-radius:8px; transition:0.3s; }
     .package-card .btn:hover { background:#00A86B; color:#fff; }
 
     /* ===== Booking Section ===== */
     .booking { padding:60px 0; background:#0b0b0b; text-align:center; }
-    .booking h2 { font-size:2.5rem; color:#FFD700; margin-bottom:20px; }
+    .booking h2 { font-size:2.5rem; color:#FFD700; margin-bottom:20px; text-shadow:0 0 5px #FFD700; }
     .booking p { font-size:1.2rem; color:#fff; margin-bottom:30px; }
     .booking form { display:flex; flex-direction:column; align-items:center; gap:15px; }
     .booking input, .booking select, .booking textarea { padding:12px; width:300px; border-radius:8px; border:1px solid #FFD700; background:#111; color:#fff; }
@@ -64,9 +75,8 @@
 </head>
 <body>
 
-  <!-- Hero / Shield Section -->
+  <!-- Hero Section -->
   <header>
-    <img src="https://via.placeholder.com/150x150?text=Shield+Logo" alt="Dominion Guard Shield Logo">
     <h1>Dominion Guard Group</h1>
   </header>
 
@@ -99,21 +109,41 @@
 
   <!-- Packages Section -->
   <section class="packages" id="packages">
-    <h2>Gold & Platinum Packages</h2>
+    <h2>Carpet Cleaning & Tile Services</h2>
     <div class="package-cards">
+
+      <!-- Gold Carpet Cleaning -->
       <div class="package-card">
-        <h3>Platinum Package</h3>
-        <p>Fast 48-hour Platinum turnaround for landlords and property managers.</p>
-        <p>1,000–5,000 SqFt + Up • Starting $850 • Full Service Make Ready</p>
-        <p>Tile & Grout Deep Clean • Full Move-Out Final Clean • All-inclusive home care</p>
-        <a href="#booking" class="btn">Book Now</a>
+        <h3>Gold Carpet Cleaning</h3>
+        <ul>
+          <li>Gold Level 2 – $85 USD – General Services</li>
+          <li>Gold Level 3 – $100 USD – General Services</li>
+          <li>Gold Level 5 – $150 USD – General Services</li>
+          <li>Gold Level 7 / 7 Room Areas – $175 USD – General Services</li>
+        </ul>
       </div>
+
+      <!-- Platinum Carpet Cleaning -->
       <div class="package-card">
-        <h3>Gold Package</h3>
-        <p>Fast 48-hour Gold turnaround for landlords and property managers.</p>
-        <p>1,000–5,000 SqFt + Up • Starting $750 • Full Service Make Ready</p>
-        <a href="#booking" class="btn">Book Now</a>
+        <h3>Platinum Carpet Cleaning</h3>
+        <ul>
+          <li>Platinum Level 2 – $125 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgraded Services)</li>
+          <li>Platinum Level 3 – $175 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgrade Services)</li>
+          <li>Platinum Level 5 – $225 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgrade Services)</li>
+          <li>Platinum Level 7 – $275 USD – Pet Treatment, High Traffic, Stain Removal, Deodorizer, Sanitizer (Upgrade Services)</li>
+        </ul>
       </div>
+
+      <!-- Tile & Grout / Sealant -->
+      <div class="package-card">
+        <h3>Tile & Grout / Sealant</h3>
+        <ul>
+          <li>Basic – $1.00 per SqFt</li>
+          <li>Deep Cleaning – $1.50 per SqFt</li>
+          <li>Cleaning, Sealing & Restoration – $2.50 per SqFt</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
@@ -127,8 +157,9 @@
       <input type="tel" placeholder="Phone Number" required>
       <select required>
         <option value="">Select Package</option>
-        <option value="gold">Gold Package</option>
-        <option value="platinum">Platinum Package</option>
+        <option value="gold">Gold Carpet Cleaning</option>
+        <option value="platinum">Platinum Carpet Cleaning</option>
+        <option value="tile">Tile & Grout / Sealant</option>
       </select>
       <textarea placeholder="Additional Notes" rows="4"></textarea>
       <button type="submit">Submit Booking</button>
