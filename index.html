@@ -4,644 +4,70 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Dominion Guard Group</title>
 
-<style>
-
-/* =========================
-DOMINION GUARD MASTER STYLE
-Black • Metallic Gold • Emerald
-========================= */
-
-:root{
-
---black:#050505;
---pureBlack:#000000;
-
---gold:#D4AF37;
---goldBright:#F2D57E;
-
---emerald:#008C6A;
---emeraldDeep:#006B52;
-
---darkGray:#0b0b0b;
-
-}
-
-
-
-/* BODY */
-
-body{
-
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:var(--black);
-color:white;
-line-height:1.6;
-
-}
-
-
-
-/* HEADER */
-
-header{
-
-background:var(--pureBlack);
-text-align:center;
-padding:40px 20px;
-border-bottom:6px solid var(--gold);
-
-}
-
-.logo{
-
-width:220px;
-margin-bottom:10px;
-
-}
-
-.company{
-
-font-size:50px;
-font-weight:bold;
-color:var(--gold);
-letter-spacing:2px;
-
-}
-
-.slogan{
-
-font-size:22px;
-color:var(--emerald);
-margin-top:10px;
-
-}
-
-
-
-/* NAVIGATION */
-
-nav{
-
-background:#0a0a0a;
-border-bottom:3px solid var(--emerald);
-padding:18px;
-text-align:center;
-
-}
-
-nav a{
-
-color:var(--gold);
-margin:25px;
-font-size:20px;
-text-decoration:none;
-font-weight:bold;
-
-}
-
-nav a:hover{
-
-color:var(--emerald);
-
-}
-
-
-
-/* HERO */
-
-.hero{
-
-text-align:center;
-padding:90px 20px;
-
-}
-
-.heroTitle{
-
-font-size:40px;
-color:var(--gold);
-
-}
-
-.heroSub{
-
-font-size:22px;
-color:var(--emerald);
-margin:20px;
-
-}
-
-
-
-/* BUTTONS */
-
-.button{
-
-background:linear-gradient(
-to bottom,
-var(--goldBright),
-var(--gold)
-);
-
-color:black;
-
-padding:18px 36px;
-
-text-decoration:none;
-
-margin:10px;
-
-display:inline-block;
-
-font-size:18px;
-
-border-radius:6px;
-
-font-weight:bold;
-
-}
-
-.button:hover{
-
-background:var(--emerald);
-color:white;
-
-}
-
-
-
-/* STRIPES */
-
-.goldStripe{
-
-height:8px;
-background:var(--gold);
-margin:60px 0;
-
-}
-
-.greenStripe{
-
-height:6px;
-background:var(--emerald);
-margin:50px 0;
-
-}
-
-
-
-/* SECTIONS */
-
-.section{
-
-padding:70px 20px;
-text-align:center;
-
-}
-
-.sectionTitle{
-
-font-size:36px;
-color:var(--gold);
-margin-bottom:20px;
-
-}
-
-
-
-/* SERVICES */
-
-.services{
-
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-.serviceBox{
-
-background:var(--darkGray);
-
-border:2px solid var(--gold);
-
-width:320px;
-
-margin:15px;
-
-padding:25px;
-
-border-radius:8px;
-
-transition:.3s;
-
-}
-
-.serviceBox:hover{
-
-border-color:var(--emerald);
-transform:scale(1.03);
-
-}
-
-.serviceBox img{
-
-width:100%;
-border-radius:6px;
-margin-bottom:10px;
-
-}
-
-
-
-/* PRICING */
-
-.pricing{
-
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-.priceBox{
-
-background:var(--darkGray);
-
-border:3px solid var(--emerald);
-
-width:340px;
-
-margin:15px;
-
-padding:25px;
-
-border-radius:8px;
-
-transition:.3s;
-
-}
-
-.priceBox:hover{
-
-border-color:var(--gold);
-transform:scale(1.02);
-
-}
-
-.priceTitle{
-
-color:var(--gold);
-font-size:22px;
-
-}
-
-.priceAmount{
-
-font-size:34px;
-color:var(--gold);
-margin:10px;
-
-}
-
-
-
-/* CONTACT TEXT */
-
-.contact{
-
-font-size:20px;
-margin:10px;
-
-}
-
-
-
-/* FOOTER */
-
-footer{
-
-text-align:center;
-padding:40px;
-border-top:6px solid var(--gold);
-background:var(--pureBlack);
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:800px){
-
-.services{
-flex-direction:column;
-align-items:center;
-}
-
-.pricing{
-flex-direction:column;
-align-items:center;
-}
-
-.company{
-font-size:36px;
-}
-
-.heroTitle{
-font-size:28px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="styles.css">
 
 </head>
+
 
 <body>
 
 
-
 <header>
 
-<!-- LOGO -->
-<img src="images/logo.png" class="logo">
+<img src="logo.png" class="logo">
 
+<h1>DOMINION GUARD GROUP</h1>
 
-<div class="company">
+<p class="tagline">
 
-Dominion Guard Group
+Luxury Carpet & Property Cleaning Services
 
-</div>
-
-<div class="slogan">
-
-Eco Driven Property Protection & Restoration
-
-</div>
+</p>
 
 </header>
 
 
 
-<nav>
+<section class="service-area">
 
-<a href="#services">Services</a>
-
-<a href="#pricing">Pricing</a>
-
-<a href="#booking">Booking</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-
-
-<div class="hero">
-
-<div class="heroTitle">
-
-Property • Facility • Infrastructure Services
-
-</div>
-
-<div class="heroSub">
-
-Professional Property Protection & Restoration
-
-</div>
-
-<a class="button" href="tel:7373045053">
-
-Call Now
-
-</a>
-
-</div>
-
-
-
-<div class="goldStripe"></div>
-
-
-
-<div class="section" id="services">
-
-<div class="sectionTitle">
-
-Property Facility Infrastructure Services
-
-</div>
-
-
-
-<div class="services">
-
-
-<div class="serviceBox">
-
-<img src="images/carpet.jpg">
-
-<h3>Carpet Cleaning</h3>
+<h2>Service Area</h2>
 
 <p>
-
-Eco Driven Deep Cleaning Restoration
-
-</p>
-
-</div>
-
-
-
-<div class="serviceBox">
-
-<img src="images/property.jpg">
-
-<h3>Property Turnover</h3>
-
-<p>
-
-48 Hour Turnaround
-
-Pricing by Square Footage
-
-</p>
-
-</div>
-
-
-
-<div class="serviceBox">
-
-<img src="images/tile.jpg">
-
-<h3>Tile & Surface Cleaning</h3>
-
-<p>
-
-Professional restoration cleaning
-
-</p>
-
-</div>
-
-
-
-<div class="serviceBox">
-
-<img src="images/eco.jpg">
-
-<h3>Eco Cleaning</h3>
-
-<p>
-
-Safe eco driven cleaning technology
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-<div class="greenStripe"></div>
-
-
-
-<div class="section" id="pricing">
-
-<div class="sectionTitle">
-
-Pricing + Tax
-
-</div>
-
-
-
-<div class="pricing">
-
-
-<div class="priceBox">
-<div class="priceTitle">Carpet Cleaning Gold Level 2</div>
-<div class="priceAmount">$85</div>
-</div>
-
-
-<div class="priceBox">
-<div class="priceTitle">Carpet Cleaning Gold Level 3</div>
-<div class="priceAmount">$100</div>
-</div>
-
-
-<div class="priceBox">
-<div class="priceTitle">Carpet Cleaning Gold Level 5</div>
-<div class="priceAmount">$150</div>
-</div>
-
-
-<div class="priceBox">
-<div class="priceTitle">Carpet Cleaning 7 Rooms</div>
-<div class="priceAmount">$175</div>
-</div>
-
-
-<div class="priceBox">
-<div class="priceTitle">Property Turnover Service</div>
-<div class="priceAmount">Square Foot Pricing</div>
-</div>
-
-
-</div>
-
-</div>
-
-
-
-<div class="goldStripe"></div>
-
-
-
-<div class="section" id="booking">
-
-<div class="sectionTitle">
-
-Booking
-
-</div>
-
-<p class="contact">
-
-Call or Email to Schedule Service
-
-</p>
-
-<p class="contact">
-
-dominionguardgroup.com@outlook.com
-
-</p>
-
-<a class="button" href="tel:7373045053">
-
-Call (737) 304-5053
-
-</a>
-
-</div>
-
-
-
-<div class="greenStripe"></div>
-
-
-
-<div class="section" id="contact">
-
-<div class="sectionTitle">
-
-Contact
-
-</div>
-
-<p class="contact">
-
-Phone: (737) 304-5053
-
-</p>
-
-<p class="contact">
-
-dominionguardgroup.com@outlook.com
-
-</p>
-
-<p class="contact">
 
 Austin Texas + Metro Areas
 
 </p>
 
-<p class="contact">
+</section>
 
-Payments:
-Zelle • Stripe • Bluevine • Cash
 
-</p>
 
-<p class="contact">
+<section class="packages">
 
-Flat Rate Discount Available
+<h2>Cleaning Packages</h2>
+
+
+<div class="package">
+
+<h3>Gold Level Cleaning</h3>
+
+<img src="gold.png">
+
+<p>
+
+Clean & Dry Carpet Cleaning<br><br>
+
+Pet Stain Treatment<br>
+
+Tile & Grout Deep Clean<br>
+
+Full Move-Out Final Clean<br><br>
+
+Fast 48 Hour Turnaround
 
 </p>
 
@@ -649,20 +75,79 @@ Flat Rate Discount Available
 
 
 
+<div class="package">
+
+<h3>Platinum Level Cleaning</h3>
+
+<img src="platinum.png">
+
+<p>
+
+Clean & Dry Carpet Cleaning<br><br>
+
+Pet Stain Treatment<br>
+
+Tile & Grout Deep Clean<br>
+
+Full Move-Out Final Clean<br><br>
+
+Fast 48 Hour Turnaround
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<section class="payments">
+
+<h2>Payments Accepted</h2>
+
+<p>
+
+Zelle • Stripe • Bluevine • Cash
+
+</p>
+
+<p>
+
+Flat Rate Discount Available
+
+</p>
+
+</section>
+
+
+
+<section class="booking">
+
+<h2>Booking</h2>
+
+<p>
+
+Email Booking:
+
+</p>
+
+<p class="email">
+
+dominionguardgroup.com@outlook.com
+
+</p>
+
+</section>
+
+
+
+
 <footer>
 
-Dominion Guard Group
-
-<br><br>
-
-Eco Driven Property Protection & Restoration
-
-<br><br>
-
-Property • Facility • Infrastructure Services
+Dominion Guard Group © 2026
 
 </footer>
-
 
 
 </body>
