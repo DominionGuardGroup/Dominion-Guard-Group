@@ -17,30 +17,27 @@
     header { background:linear-gradient(135deg, #000, #0a0a0a); padding:60px 0; text-align:center; }
     header img { width:150px; margin-bottom:20px; }
     header h1 { font-size:3rem; color:#FFD700; margin-bottom:10px; }
-    header p { font-size:1.2rem; color:#00A86B; }
+    header p { font-size:1.2rem; color:#00A86B; margin-bottom:10px; }
+    header .tagline { font-size:1rem; color:#fff; margin-top:5px; }
 
     /* ===== Navigation ===== */
-    nav { background:#111; display:flex; justify-content:center; padding:15px 0; }
+    nav { background:#111; display:flex; justify-content:center; padding:15px 0; flex-wrap:wrap; }
     nav a { margin:0 20px; font-weight:700; color:#FFD700; transition:0.3s; }
     nav a:hover { color:#00A86B; }
 
     /* ===== Services Section ===== */
     .services { padding:60px 0; background:#0b0b0b; }
     .services h2 { text-align:center; font-size:2.5rem; color:#FFD700; margin-bottom:40px; }
-    .service-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-    .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; width:280px; text-align:center; transition:0.3s; }
-    .service-card:hover { transform:translateY(-5px); box-shadow:0 5px 20px rgba(255,215,0,0.5); }
-    .service-card img { border-radius:8px; margin-bottom:15px; }
+    .service-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
+    .service-card { background:#111; border:2px solid #FFD700; border-radius:12px; padding:20px; text-align:center; }
     .service-card h3 { font-size:1.5rem; color:#FFD700; margin-bottom:10px; }
     .service-card p { font-size:1rem; color:#fff; }
 
     /* ===== Packages Section ===== */
     .packages { padding:60px 0; background:#0a0a0a; }
     .packages h2 { text-align:center; font-size:2.5rem; color:#00A86B; margin-bottom:40px; }
-    .package-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-    .package-card { background:#111; border:2px solid #00A86B; border-radius:12px; padding:20px; width:320px; text-align:center; transition:0.3s; }
-    .package-card:hover { transform:translateY(-5px); box-shadow:0 5px 20px rgba(0,168,107,0.5); }
-    .package-card img { border-radius:8px; margin-bottom:15px; }
+    .package-cards { display:flex; flex-direction:column; gap:25px; max-width:900px; margin:0 auto; }
+    .package-card { background:#111; border:2px solid #00A86B; border-radius:12px; padding:20px; text-align:center; }
     .package-card h3 { font-size:1.8rem; color:#FFD700; margin-bottom:10px; }
     .package-card p { font-size:1rem; color:#fff; margin-bottom:15px; }
     .package-card .btn { display:inline-block; background:#FFD700; color:#0b0b0b; font-weight:700; padding:10px 20px; border-radius:8px; transition:0.3s; }
@@ -73,7 +70,8 @@
   <header>
     <img src="https://via.placeholder.com/150x150?text=Shield" alt="Dominion Guard Shield Logo">
     <h1>Dominion Guard Group</h1>
-    <p>Executive Carpet & Home Services — Austin, TX & Metro Areas</p>
+    <p>Executive Property & Luxury Services — Austin, TX & Metro Areas</p>
+    <p class="tagline">Eco Driven Property Protection & Restoration • Professional Property Protection & Restoration • Property • Facility • Infrastructure Services</p>
   </header>
 
   <!-- Navigation -->
@@ -86,22 +84,19 @@
 
   <!-- Services Section -->
   <section class="services" id="services">
-    <h2>Our Luxury Services</h2>
+    <h2>Our Services</h2>
     <div class="service-cards">
       <div class="service-card">
-        <img src="https://via.placeholder.com/280x180?text=Carpet+Cleaning" alt="Carpet Cleaning">
-        <h3>Eco-Friendly Carpet Cleaning</h3>
-        <p>Clean & dry carpets using eco-friendly solutions. Pet stain treatment included.</p>
+        <h3>Eco Driven Property Protection & Restoration</h3>
+        <p>High-quality sustainable property cleaning and restoration services for landlords and property managers.</p>
       </div>
       <div class="service-card">
-        <img src="https://via.placeholder.com/280x180?text=Tile+Cleaning" alt="Tile Cleaning">
-        <h3>Tile & Grout Cleaning</h3>
-        <p>Deep cleaning for tiles & grout with professional care, restoring shine.</p>
+        <h3>Professional Property Protection & Restoration</h3>
+        <p>Executive-grade protection and restoration ensuring properties remain in pristine condition.</p>
       </div>
       <div class="service-card">
-        <img src="https://via.placeholder.com/280x180?text=Furniture+Cleaning" alt="Furniture Cleaning">
-        <h3>Luxury Furniture Cleaning</h3>
-        <p>Executive-grade treatment for sofas, chairs, and all home furniture surfaces.</p>
+        <h3>Property • Facility • Infrastructure Services</h3>
+        <p>Comprehensive care for property, facilities, and infrastructure to maximize value and longevity.</p>
       </div>
     </div>
   </section>
@@ -111,15 +106,16 @@
     <h2>Gold & Platinum Packages</h2>
     <div class="package-cards">
       <div class="package-card">
-        <img src="https://via.placeholder.com/320x180?text=Gold+Package" alt="Gold Package">
-        <h3>Gold Package</h3>
-        <p>Professional cleaning for carpets, tiles, and furniture with premium products.</p>
+        <h3>Platinum Package</h3>
+        <p>Fast 48-hour Platinum turnaround for landlords and property managers.</p>
+        <p>1,000–5,000 SqFt + Up • Starting $850 • Full Service Make Ready</p>
+        <p>Tile & Grout Deep Clean • Full Move-Out Final Clean • All-inclusive home care</p>
         <a href="#booking" class="btn">Book Now</a>
       </div>
       <div class="package-card">
-        <img src="https://via.placeholder.com/320x180?text=Platinum+Package" alt="Platinum Package">
-        <h3>Platinum Package</h3>
-        <p>All-inclusive home care: carpet, tile, furniture, and special stain treatment.</p>
+        <h3>Gold Package</h3>
+        <p>Fast 48-hour Gold turnaround for landlords and property managers.</p>
+        <p>1,000–5,000 SqFt + Up • Starting $750 • Full Service Make Ready</p>
         <a href="#booking" class="btn">Book Now</a>
       </div>
     </div>
