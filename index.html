@@ -1,155 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dominion Guard Group</title>
-<link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* BRAND COLORS */
+
+:root{
+
+--black:#000000;
+--gold:#D4AF37;
+--emerald:#009B77;
+
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:var(--black);
+color:white;
+}
+
+
+
+/* HEADER */
+
+header{
+
+background:var(--black);
+text-align:center;
+padding:30px;
+border-bottom:6px solid var(--gold);
+
+}
+
+.company{
+
+font-size:44px;
+font-weight:bold;
+color:var(--gold);
+
+}
+
+.slogan{
+
+font-size:22px;
+color:var(--emerald);
+margin-top:10px;
+
+}
+
+
+
+/* NAV */
+
+nav{
+
+background:#0a0a0a;
+border-bottom:3px solid var(--emerald);
+padding:18px;
+text-align:center;
+
+}
+
+nav a{
+
+color:var(--gold);
+margin:25px;
+font-size:20px;
+text-decoration:none;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+padding:80px 20px;
+
+}
+
+.heroTitle{
+
+font-size:36px;
+color:var(--gold);
+
+}
+
+.heroSub{
+
+font-size:22px;
+color:var(--emerald);
+margin:20px;
+
+}
+
+
+
+/* BUTTONS */
+
+.button{
+
+background:var(--gold);
+color:black;
+padding:16px 30px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+font-size:18px;
+border-radius:5px;
+
+}
+
+
+
+/* STRIPES */
+
+.goldStripe{
+
+height:8px;
+background:var(--gold);
+margin:50px 0;
+
+}
+
+.greenStripe{
+
+height:6px;
+background:var(--emerald);
+margin:40px 0;
+
+}
+
+
+
+/* SECTIONS */
+
+.section{
+
+padding:60px 20px;
+text-align:center;
+
+}
+
+.sectionTitle{
+
+font-size:34px;
+color:var(--gold);
+
+}
+
+
+
+/* SERVICES */
+
+.services{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.serviceBox{
+
+background:#050505;
+border:2px solid var(--gold);
+width:300px;
+margin:15px;
+padding:25px;
+
+}
+
+
+
+/* PRICING */
+
+.pricing{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.priceBox{
+
+background:#020202;
+border:3px solid var(--emerald);
+width:320px;
+margin:15px;
+padding:25px;
+
+}
+
+.priceTitle{
+
+color:var(--gold);
+font-size:22px;
+
+}
+
+.priceAmount{
+
+font-size:32px;
+color:var(--gold);
+margin:10px;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:40px;
+border-top:6px solid var(--gold);
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-<center>
-<img src="images/dominionlogo.png" width="300">
-<h1>Dominion Guard Group</h1>
-<p>Eco Driven Property Protection & Restoration<br>
-Property • Facility • Infrastructure<br>
-Austin Texas + Metro Areas</p>
-<p>Payments: Zelle • Stripe • Bluevine • Cash Flat Rate Discount*</p>
-</center>
 
-<hr>
 
-<!-- GOLD SERVICES -->
-<h2>Gold Services</h2>
-<div class="service">
-<img src="images/gold1.jpg">
-<h3>Gold Level 1</h3>
-<p>$75.00 USD</p>
+<header>
+
+<div class="company">
+
+Dominion Guard Group
+
+</div>
+
+<div class="slogan">
+
+Eco Driven Property Protection & Restoration
+
+</div>
+
+</header>
+
+
+
+<nav>
+
+<a href="#services">Services</a>
+
+<a href="#pricing">Pricing</a>
+
+<a href="#booking">Booking</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<div class="hero">
+
+<div class="heroTitle">
+
+Property • Facility • Infrastructure Services
+
+</div>
+
+<div class="heroSub">
+
+Professional Property Protection & Restoration
+
+</div>
+
+<a class="button" href="tel:7373045053">
+
+Call Now
+
+</a>
+
+</div>
+
+
+
+<div class="goldStripe"></div>
+
+
+
+<div class="section" id="services">
+
+<div class="sectionTitle">
+
+Property Facility Infrastructure Services
+
+</div>
+
+
+<div class="services">
+
+
+<div class="serviceBox">
+
+<h3>Carpet Cleaning</h3>
+
+<p>
+
+Eco Driven Deep Cleaning Restoration
+
+</p>
+
+</div>
+
+
+<div class="serviceBox">
+
+<h3>Property Turnover</h3>
+
+<p>
+
+Fast 48-hour turnaround for landlords and property managers.
+
+Pricing by square footage.
+
+</p>
+
+</div>
+
+
+<div class="serviceBox">
+
+<h3>Tile & Surface Cleaning</h3>
+
+<p>
+
+Professional restoration cleaning.
+
+</p>
+
+</div>
+
+
+<div class="serviceBox">
+
+<h3>Eco Cleaning</h3>
+
+<p>
+
+Safe eco driven cleaning technology.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="greenStripe"></div>
+
+
+
+<div class="section" id="pricing">
+
+<div class="sectionTitle">
+
+Pricing + Tax
+
+</div>
+
+
+
+<div class="pricing">
+
+
+<div class="priceBox">
+
+<div class="priceTitle">
+
+Carpet Cleaning Gold Level 2
+
+</div>
+
+<div class="priceAmount">
+
+$85.00 USD
+
+</div>
+
 <p>General Services</p>
-<button onclick="addToCart('Gold Level 1',75)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
 </div>
 
-<div class="service">
-<img src="images/gold2.jpg">
-<h3>Gold Level 2</h3>
-<p>$85.00 USD</p>
+
+
+<div class="priceBox">
+
+<div class="priceTitle">
+
+Carpet Cleaning Gold Level 3
+
+</div>
+
+<div class="priceAmount">
+
+$100.00 USD
+
+</div>
+
 <p>General Services</p>
-<button onclick="addToCart('Gold Level 2',85)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
 </div>
 
-<div class="service">
-<img src="images/gold3.jpg">
-<h3>Gold Level 3</h3>
-<p>$100.00 USD</p>
+
+
+<div class="priceBox">
+
+<div class="priceTitle">
+
+Carpet Cleaning Gold Level 5
+
+</div>
+
+<div class="priceAmount">
+
+$150.00 USD
+
+</div>
+
 <p>General Services</p>
-<button onclick="addToCart('Gold Level 3',100)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
 </div>
 
-<div class="service">
-<img src="images/gold5.jpg">
-<h3>Gold Level 5</h3>
-<p>$150.00 USD</p>
+
+
+<div class="priceBox">
+
+<div class="priceTitle">
+
+Carpet Cleaning 7 Room Areas
+
+</div>
+
+<div class="priceAmount">
+
+$175.00 USD
+
+</div>
+
 <p>General Services</p>
-<button onclick="addToCart('Gold Level 5',150)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
 </div>
 
-<div class="service">
-<img src="images/gold7.jpg">
-<h3>Gold 7 Room Areas</h3>
-<p>$175.00 USD</p>
-<p>General Services</p>
-<button onclick="addToCart('Gold Level 7',175)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
+
+<div class="priceBox">
+
+<div class="priceTitle">
+
+Property Turnover Service
+
 </div>
 
-<p>Fast 48-hour Gold turnaround for landlords and property managers.<br>
-1,000-5,000 SqFt + Up • Starting $750 • Full Service Make Ready</p>
+<div class="priceAmount">
 
-<hr>
+Pricing by Square Footage
 
-<!-- PLATINUM SERVICES -->
-<h2>Platinum Services</h2>
-
-<div class="service">
-<img src="images/platinum1.jpg">
-<h3>Platinum Level 1</h3>
-<p>$115.00 USD</p>
-<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
-<button onclick="addToCart('Platinum Level 1',115)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
 </div>
 
-<div class="service">
-<img src="images/platinum2.jpg">
-<h3>Platinum Level 2</h3>
-<p>$125.00 USD</p>
-<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
-<button onclick="addToCart('Platinum Level 2',125)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+<p>48 Hour Turnaround</p>
+
 </div>
 
-<div class="service">
-<img src="images/platinum3.jpg">
-<h3>Platinum Level 3</h3>
-<p>$175.00 USD</p>
-<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
-<button onclick="addToCart('Platinum Level 3',175)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
 </div>
 
-<div class="service">
-<img src="images/platinum5.jpg">
-<h3>Platinum Level 5</h3>
-<p>$225.00 USD</p>
-<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
-<button onclick="addToCart('Platinum Level 5',225)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
 </div>
 
-<div class="service">
-<img src="images/platinum7.jpg">
-<h3>Platinum Level 7</h3>
-<p>$275.00 USD</p>
-<p>Pet Treatment • High Traffic • Stain Removal • Deodorizer • Sanitizer</p>
-<button onclick="addToCart('Platinum Level 7',275)">Add To Cart</button>
-<button onclick="bookNow()">Book Now</button>
+
+
+<div class="goldStripe"></div>
+
+
+
+<div class="section" id="booking">
+
+<div class="sectionTitle">
+
+Booking
+
 </div>
 
-<p>Fast 48-hour Platinum turnaround for landlords and property managers.<br>
-1,000-5,000 SqFt + Up • Starting $850 • Full Service Make Ready</p>
+<p>
 
-<hr>
+Call to schedule service
 
-<!-- CARPET EXAMPLES -->
-<h2>Carpet Examples</h2>
-<img src="images/carpet1.jpg" width="300">
-<img src="images/carpet2.jpg" width="300">
-<img src="images/cleaning1.jpg" width="300">
+</p>
 
-<hr>
+<a class="button" href="tel:7373045053">
 
-<!-- LUXURY GOLD GALLERY -->
-<h2>Luxury Executive Gold Gallery</h2>
-<div class="luxury-gallery">
-<img src="images/luxury1.jpg" width="300">
-<img src="images/luxury2.jpg" width="300">
-<img src="images/luxury3.jpg" width="300">
-<img src="images/luxury4.jpg" width="300">
-<img src="images/luxury5.jpg" width="300">
-<img src="images/luxury6.jpg" width="300">
-<img src="images/luxury7.jpg" width="300">
+Call (737) 304-5053
+
+</a>
+
 </div>
 
-<hr>
 
-<!-- CART -->
-<h2>Your Cart</h2>
-<div id="cart">Cart is empty</div>
 
-<script src="script.js"></script>
+<div class="greenStripe"></div>
+
+
+
+<div class="section" id="contact">
+
+<div class="sectionTitle">
+
+Contact
+
+</div>
+
+<p>
+
+Phone: (737) 304-5053
+
+</p>
+
+<p>
+
+Dominionguardgroup.com@outlook.com
+
+</p>
+
+<p>
+
+Austin Texas
+
+</p>
+
+</div>
+
+
+
+<footer>
+
+Dominion Guard Group
+
+<br>
+
+Eco Driven Property Protection & Restoration
+
+<br>
+
+Property • Facility • Infrastructure Services
+
+</footer>
+
+
+
 </body>
+
 </html>
