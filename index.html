@@ -7,11 +7,13 @@
 
 <style>
 
+/* GLOBAL */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial;
 }
 
 body{
@@ -19,40 +21,45 @@ background:#050505;
 color:white;
 }
 
-/* METALLIC GOLD SHINE */
 
-@keyframes goldShine{
+/* METALLIC GOLD */
+
+@keyframes shine{
+
 0%{background-position:0%}
+
 100%{background-position:200%}
+
 }
 
-.goldText{
+.gold{
 
 background:linear-gradient(
 90deg,
-#b89600,
+#8f6b00,
 #ffd700,
-#fff4a3,
+#fff3a0,
 #ffd700,
-#b89600
+#8f6b00
 );
 
 background-size:200%;
 
 -webkit-background-clip:text;
+
 -webkit-text-fill-color:transparent;
 
-animation:goldShine 6s linear infinite;
+animation:shine 6s linear infinite;
 
 text-shadow:
 
-0 0 5px #ffd700,
+0 0 6px #ffd700,
 0 0 15px #ffd700,
-0 0 30px #ffd700;
+0 0 25px #ffd700;
 }
 
 
-/* EMERALD GLOW */
+/* EMERALD */
 
 .emerald{
 
@@ -60,40 +67,59 @@ color:#00c46a;
 
 text-shadow:
 
-0 0 5px #00c46a,
-0 0 15px #00c46a,
-0 0 30px #00c46a;
+0 0 6px #00c46a,
+0 0 15px #00c46a;
 }
+
 
 
 /* HEADER */
 
 header{
 
-padding:80px 0;
 text-align:center;
-background:#000;
+
+padding:80px 20px;
+
+background:black;
+
 border-bottom:2px solid #ffd700;
 }
 
 header h1{
 
-font-size:48px;
+font-size:52px;
 }
+
+header p{
+
+margin-top:10px;
+font-size:18px;
+}
+
+
+
+/* NAV */
 
 nav{
 
-background:#000;
-padding:15px;
+background:black;
+
 text-align:center;
+
+padding:15px;
+
 border-bottom:1px solid #ffd700;
 }
 
 nav a{
 
-margin:15px;
 color:#ffd700;
+
+margin:15px;
+
 font-weight:bold;
+
 text-decoration:none;
 }
 
@@ -103,13 +129,16 @@ color:#00c46a;
 }
 
 
+
 /* SECTIONS */
 
 section{
 
 padding:60px 20px;
+
 text-align:center;
 }
+
 
 
 /* CARDS */
@@ -126,7 +155,7 @@ padding:25px;
 
 margin:25px auto;
 
-max-width:800px;
+max-width:850px;
 
 transition:.4s;
 }
@@ -135,9 +164,9 @@ transition:.4s;
 
 box-shadow:
 
-0 0 20px #ffd700,
-0 0 40px #ffd700;
+0 0 25px #ffd700;
 }
+
 
 
 /* BOOKING */
@@ -179,6 +208,7 @@ cursor:pointer;
 button:hover{
 
 background:#ffd700;
+
 color:black;
 }
 
@@ -187,46 +217,105 @@ color:black;
 
 footer{
 
-padding:30px;
-
 background:black;
+
+padding:40px;
 
 text-align:center;
 
-color:#777;
+color:#aaa;
 }
 
 </style>
-</head>
 
+</head>
 
 <body>
 
 
+
 <header>
 
-<h1 class="goldText">
+<h1 class="gold">
 
 Dominion Guard Group
 
 </h1>
 
+<p class="emerald">
+
+Austin TX + Metro Area
+
+</p>
+
 </header>
+
 
 
 <nav>
 
-<a href="#gold">Gold</a>
+<a href="#services">Services</a>
 
-<a href="#platinum">Platinum</a>
+<a href="#gold">Gold Carpet</a>
+
+<a href="#platinum">Platinum Carpet</a>
 
 <a href="#tile">Tile & Grout</a>
 
 <a href="#fast">Fast 48</a>
 
-<a href="#book">Booking</a>
+<a href="#book">Book Today</a>
 
 </nav>
+
+
+
+
+<section id="services">
+
+<h2 class="gold">
+
+Professional Property Protection & Restoration
+
+</h2>
+
+
+<div class="card">
+
+<h3 class="emerald">
+
+Eco Driven Property Protection & Restoration
+
+</h3>
+
+<p>
+
+High-quality sustainable property cleaning and restoration services for landlords and property managers.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3 class="emerald">
+
+Property • Facility • Infrastructure Services
+
+</h3>
+
+<p>
+
+Comprehensive care for property, facilities, and infrastructure to maximize value and longevity.
+
+</p>
+
+</div>
+
+
+</section>
+
 
 
 
@@ -234,38 +323,74 @@ Dominion Guard Group
 
 <h2 class="emerald">
 
-Gold Carpet Cleaning
+Gold Carpet Cleaning Deals
 
 </h2>
 
 
+
 <div class="card">
 
-Gold Level 2 — $85<br>
+Carpet Cleaning Gold Level 2
+
+<br><br>
+
+$85.00 USD
+
+<br><br>
+
 General Services
 
 </div>
 
+
+
 <div class="card">
 
-Gold Level 3 — $100<br>
+Carpet Cleaning Gold Level 3
+
+<br><br>
+
+$100.00 USD
+
+<br><br>
+
 General Services
 
 </div>
 
+
+
 <div class="card">
 
-Gold Level 5 — $150<br>
+Carpet Cleaning Gold Level 5
+
+<br><br>
+
+$150.00 USD
+
+<br><br>
+
 General Services
 
 </div>
 
+
+
 <div class="card">
 
-Gold Level 7 — $175<br>
+Carpet Cleaning Gold Level 7
+
+<br><br>
+
+$175.00 USD
+
+<br><br>
+
 General Services
 
 </div>
+
 
 </section>
 
@@ -276,22 +401,37 @@ General Services
 
 <h2 class="emerald">
 
-Platinum Carpet Cleaning
+Platinum Carpet Cleaning Deals
 
 </h2>
 
 
+
 <div class="card">
 
-Platinum Level 2 — $125<br>
+Carpet Cleaning Platinum Level 2
 
-Pet Treatment<br>
+<br><br>
 
-High Traffic<br>
+$125.00 USD
 
-Stain Removal<br>
+<br><br>
 
-Deodorizer<br>
+Pet Treatment
+
+<br>
+
+High Traffic
+
+<br>
+
+Stain Removal
+
+<br>
+
+Deodorizer
+
+<br>
 
 Sanitizer
 
@@ -301,33 +441,29 @@ Sanitizer
 
 <div class="card">
 
-Platinum Level 3 — $175<br>
+Carpet Cleaning Platinum Level 3
 
-Pet Treatment<br>
+<br><br>
 
-High Traffic<br>
+$175.00 USD
 
-Stain Removal<br>
+<br><br>
 
-Deodorizer<br>
+Pet Treatment
 
-Sanitizer
+<br>
 
-</div>
+High Traffic
 
+<br>
 
+Stain Removal
 
-<div class="card">
+<br>
 
-Platinum Level 5 — $225<br>
+Deodorizer
 
-Pet Treatment<br>
-
-High Traffic<br>
-
-Stain Removal<br>
-
-Deodorizer<br>
+<br>
 
 Sanitizer
 
@@ -337,15 +473,61 @@ Sanitizer
 
 <div class="card">
 
-Platinum Level 7 — $275<br>
+Carpet Cleaning Platinum Level 5
 
-Pet Treatment<br>
+<br><br>
 
-High Traffic<br>
+$225.00 USD
 
-Stain Removal<br>
+<br><br>
 
-Deodorizer<br>
+Pet Treatment
+
+<br>
+
+High Traffic
+
+<br>
+
+Stain Removal
+
+<br>
+
+Deodorizer
+
+<br>
+
+Sanitizer
+
+</div>
+
+
+
+<div class="card">
+
+Carpet Cleaning Platinum Level 7
+
+<br><br>
+
+$275.00 USD
+
+<br><br>
+
+Pet Treatment
+
+<br>
+
+High Traffic
+
+<br>
+
+Stain Removal
+
+<br>
+
+Deodorizer
+
+<br>
 
 Sanitizer
 
@@ -366,21 +548,38 @@ Tile & Grout / Sealant
 </h2>
 
 
+
 <div class="card">
 
-Basic — $1.00 per SqFt
+Basic Cleaning
+
+<br><br>
+
+Starting $1.00 per SqFt
 
 </div>
 
+
+
 <div class="card">
 
-Deep Cleaning — $1.50 per SqFt
+Deep Cleaning
+
+<br><br>
+
+Starting $1.50 per SqFt
 
 </div>
 
+
+
 <div class="card">
 
-Cleaning Sealing Restoration — $2.50 per SqFt
+Cleaning • Sealing • Restoration
+
+<br><br>
+
+Starting $2.50 per SqFt
 
 </div>
 
@@ -399,9 +598,10 @@ Fast 48-Hour Make Ready
 </h2>
 
 
+
 <div class="card">
 
-Landlords • Property Managers
+Landlords • Property Owners • Property Managers
 
 <br><br>
 
@@ -425,16 +625,27 @@ Full Property Make Ready
 
 <section id="book">
 
-<h2 class="goldText">
+<h2 class="gold">
 
-Book Service
+Book Your Service Today
 
 </h2>
 
 
-<input placeholder="Name"><br>
+<p>
 
-<input placeholder="Phone"><br>
+Payments Accepted
+
+<br><br>
+
+Zelle • Stripe • Bluevine • Cash
+
+</p>
+
+
+<input placeholder="Full Name"><br>
+
+<input placeholder="Phone Number"><br>
 
 <input placeholder="Email"><br>
 
@@ -443,9 +654,9 @@ Book Service
 
 <option>Select Service</option>
 
-<option>Gold Cleaning</option>
+<option>Gold Carpet Cleaning</option>
 
-<option>Platinum Cleaning</option>
+<option>Platinum Carpet Cleaning</option>
 
 <option>Tile & Grout</option>
 
@@ -456,9 +667,10 @@ Book Service
 
 <br>
 
-<textarea rows="4" placeholder="Details"></textarea>
+<textarea rows="4" placeholder="Service Details"></textarea>
 
 <br>
+
 
 <button>
 
@@ -467,17 +679,43 @@ Submit Booking
 </button>
 
 
+<br><br>
+
+Email:
+
+dominionguardgroup.com@outlook.com
+
+
 </section>
+
 
 
 
 <footer>
 
-Dominion Guard Group © 2026
+Dominion Guard Group
+
+<br><br>
+
+Austin TX + Metro Areas
+
+<br><br>
+
+Phone
+
+(737) 304-5053
+
+<br><br>
+
+dominionguardgroup.com@outlook.com
+
+<br><br>
+
+© 2026 Dominion Guard Group
 
 </footer>
 
 
-</body>
 
+</body>
 </html>
