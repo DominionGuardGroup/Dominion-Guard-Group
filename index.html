@@ -672,4 +672,40 @@ Austin TX + Metro Areas
 
 </body>
 
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+    <!-- Cart display section -->
+    <div id="cart"></div>
+
+    <!-- Example product buttons -->
+    <button onclick="addToCart('Product A', 19.99)">Add Product A</button>
+    <button onclick="addToCart('Product B', 29.99)">Add Product B</button>
+
+    <!-- Book Now button -->
+    <button onclick="bookNow()">Book Now</button>
+
+    <script>
+        var cart = [];
+
+        // Function to add items to the cart
+        function addToCart(name, price) {
+            cart.push(name + " $" + price);
+            document.getElementById("cart").innerHTML = cart.join("<br>");
+        }
+
+        // Function for booking
+        function bookNow() {
+            alert("Booking Request Sent");
+        }
+    </script>
+
+</body>
 </html>
